@@ -271,7 +271,6 @@ $RECYCLE.BIN/
 
 # Fetchable code analysis configuration files used by Codeclimate:
 .scss-lint.yml
-tox.ini
 default.eslintrc.yml
 
 # End of https://www.gitignore.io/api/node,linux,macos,django,python,angular,windows
