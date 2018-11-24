@@ -1,4 +1,6 @@
-#Places Exercise Api
+# Places Exercise Api
+
+This a development exercise
 
 ## Contents
 * [Staging](#staging)
