@@ -4,6 +4,7 @@ places_api urls
 """
 from django.urls import path, include
 
+from places_api.utils import api_router
 from places_api.views import (
     SignOutView, SignInView, SignUpView, UpdatePasswordView)
 
@@ -18,4 +19,5 @@ auth_patterns = ([
 
 urlpatterns = [
     path('auth/', include(auth_patterns)),
+    path('', include(api_router.urls)),
 ]
