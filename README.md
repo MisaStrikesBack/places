@@ -23,6 +23,8 @@ This a development exercise
 
 ## Development
 
+# Important!: This project WON'T work unless you provide a valid google places api key inside the keys.env file
+
 ### Project setup
 - Cloning the repo:
 ```

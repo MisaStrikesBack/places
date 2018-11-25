@@ -44,6 +44,8 @@ services:
     - postgres
     networks:
     - backend
+    env_file:
+      - keys.env
     environment: &app_env
       DEBUG: 'True'
       DATABASE_URL: postgres://postgres:3x4mpl3@postgres:5432/places_development
