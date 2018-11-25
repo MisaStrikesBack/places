@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 ALLOWED_HOSTS = [
     'localhost',
-    'places-grin.herokuapp.com'
+    'places-exercise-api.herokuapp.com'
 ]
 CORS_ORIGIN_ALLOW_ALL = True
 CSRF_USE_SESSIONS = True
@@ -93,6 +93,12 @@ DATABASES = {
     'default': dj_database_url.config(conn_max_age=600)
 }
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'dev_cache',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
