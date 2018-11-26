@@ -170,7 +170,6 @@ typings/
 
 # dotenv environment variables file
 .env
-!*.example.env
 
 ### Angular ###
 ## Angular ##

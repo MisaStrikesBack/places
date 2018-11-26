@@ -1,0 +1,907 @@
+[
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4730008,
+        "lng": -99.1885226
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4743524802915,
+          "lng": -99.18721886970849
+        },
+        "southwest": {
+          "lat": 19.4716545197085,
+          "lng": -99.1899168302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "77cbfa939e1865ff49880765f853b8df69b0b59f",
+    "name": "Centennial ballrooms",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3120,
+        "html_attributions": [
+          "Mixel Adm"
+        ],
+        "photo_reference": "CmRaAAAAhgnpILDYFW-YniVXdjGEu7Vjj5yfmY8-UfozQWtHI6ZzaQWhyBFlw-2pZCZDaz3QjZQlMIjT_rbDmsODbNciKq-9X1msXgi7Wec3iFO2BrrmKGWHaWvC6V5c14kl_WrmEhDRRoz3LXrrF2VxPRR_p3x8GhRM1PvVIUXb1y4rxn9_UrHX66-2SQ",
+        "width": 4160
+      }
+    ],
+    "place_id": "ChIJ-UlR64H40YURYL3t4Rca1gw",
+    "plus_code": {
+      "compound_code": "FRF6+6H Mexico City, Mexico",
+      "global_code": "76F2FRF6+6H"
+    },
+    "rating": 4.1,
+    "reference": "ChIJ-UlR64H40YURYL3t4Rca1gw",
+    "scope": "GOOGLE",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Centenario 367, Nextengo, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.467098,
+        "lng": -99.19498259999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4682439802915,
+          "lng": -99.19369701970848
+        },
+        "southwest": {
+          "lat": 19.4655460197085,
+          "lng": -99.1963949802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+    "id": "5921d83485fbce6c2d04445d65a048b399dc6806",
+    "name": "Bicentennial Park Skatepark",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1960,
+        "html_attributions": [
+          "Daniel Valle"
+        ],
+        "photo_reference": "CmRaAAAANV5s7f94k1X7DiJR_bFLXpQ9C2q5-AX_9XvlTI1KFECaP0bzxuQpQW5kwjqPKmeJdULde3Ba-i6fN-9ncYuXBjwNNPjDIYYOLVvxGjiszj9baCVBwfxTPwKpLFLcXC6oEhDWu1w-V9d8h8kwfVuCF-x9GhQdyA2dVC9XvYw-I5SFX1rCpWiMGQ",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJR2Yx83kC0oURs3kgnNCL91s",
+    "plus_code": {
+      "compound_code": "FR84+R2 Mexico City, Mexico",
+      "global_code": "76F2FR84+R2"
+    },
+    "rating": 4.5,
+    "reference": "ChIJR2Yx83kC0oURs3kgnNCL91s",
+    "scope": "GOOGLE",
+    "types": [
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Av. 5 de Mayo 290, San Lorenzo Tlaltenango, Miguel Hidalgo"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4728407,
+        "lng": -99.1925539
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4738614302915,
+          "lng": -99.19098166970849
+        },
+        "southwest": {
+          "lat": 19.4711634697085,
+          "lng": -99.19367963029151
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+    "id": "8f6a9f9be6cf7c5c8d347de045ce6e577f7dc7ff",
+    "name": "Walmart Azcapotzalco",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1080,
+        "html_attributions": [
+          "Juan José Monroy Moreno"
+        ],
+        "photo_reference": "CmRaAAAAN8KQXu-bieNOZ2ZYymTNCYEslUdi4oj_AhgoWbLROxn223kxnWHuhrNH18niFmsUhorlUWWnK1ChY9FXg_M-EgUeUYfJhO0ougdYTVzMe1x_vEs_IVzBF2K1otjcGbYIEhACaDsD8tcp9k9wYGTEEjJBGhQ_hXAKEXpPDFkD8Uf4XP649QPU6Q",
+        "width": 1920
+      }
+    ],
+    "place_id": "ChIJO0lU038C0oUR260PKftz2r8",
+    "plus_code": {
+      "compound_code": "FRF4+4X Mexico City, Mexico",
+      "global_code": "76F2FRF4+4X"
+    },
+    "price_level": 1,
+    "rating": 4,
+    "reference": "ChIJO0lU038C0oUR260PKftz2r8",
+    "scope": "GOOGLE",
+    "types": [
+      "supermarket",
+      "grocery_or_supermarket",
+      "store",
+      "point_of_interest",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "Calle Camino a Nextengo 78, Santa Cruz Acayucan, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4762926,
+        "lng": -99.18718319999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.47764148029151,
+          "lng": -99.18584281970848
+        },
+        "southwest": {
+          "lat": 19.4749435197085,
+          "lng": -99.1885407802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "9e845506e708b2ce3aebe5fae93094711e7fcce1",
+    "name": "ALCOHOLICOS ANONIMOS",
+    "opening_hours": {
+      "open_now": true
+    },
+    "place_id": "ChIJJ4FDeI740YURkSP8vlwAsKY",
+    "plus_code": {
+      "compound_code": "FRG7+G4 Mexico City, Mexico",
+      "global_code": "76F2FRG7+G4"
+    },
+    "rating": 2,
+    "reference": "ChIJJ4FDeI740YURkSP8vlwAsKY",
+    "scope": "GOOGLE",
+    "types": [
+      "health",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Avenida Azcapotzalco 443, Nextengo, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4775198,
+        "lng": -99.19639049999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4788687802915,
+          "lng": -99.19504151970848
+        },
+        "southwest": {
+          "lat": 19.4761708197085,
+          "lng": -99.19773948029149
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "5308550773d180024315638162a2009619ff069d",
+    "name": "Seca",
+    "opening_hours": {
+      "open_now": false
+    },
+    "place_id": "ChIJFyytPlv40YUR-OsLx-bsnLs",
+    "plus_code": {
+      "compound_code": "FRH3+2C Mexico City, Mexico",
+      "global_code": "76F2FRH3+2C"
+    },
+    "rating": 4.9,
+    "reference": "ChIJFyytPlv40YUR-OsLx-bsnLs",
+    "scope": "GOOGLE",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Centeotl 223-A, San Antonio, Azcapotzalco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4715642,
+        "lng": -99.191116
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4728610802915,
+          "lng": -99.18988611970849
+        },
+        "southwest": {
+          "lat": 19.4701631197085,
+          "lng": -99.1925840802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+    "id": "3ec666299df5f3b79082d57ce39a504cb861d905",
+    "name": "Suburbia, S De R.L. De C.V.",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3264,
+        "html_attributions": [
+          "Daniela Avilés"
+        ],
+        "photo_reference": "CmRaAAAAmkgWtsJshOB_CewV54grVRYN_3d-3wg7IZgdbZr8h2IGu5ip71BXd9sFIzv4WdRvmt-xneE5caEx5NBBtvAVKQP_pBPgc9BGlF10SMG6LcYYvMDQ4OHGdRXjtjh4I-PKEhAN96u9HLCA6H3lopoMrAwkGhQPnzGAdGwvC7coO_WbIVjdcKWKkw",
+        "width": 2448
+      }
+    ],
+    "place_id": "ChIJ-c4zXoD40YURcv7DJT6VOng",
+    "plus_code": {
+      "compound_code": "FRC5+JH Mexico City, Mexico",
+      "global_code": "76F2FRC5+JH"
+    },
+    "rating": 4.1,
+    "reference": "ChIJ-c4zXoD40YURcv7DJT6VOng",
+    "scope": "GOOGLE",
+    "types": [
+      "clothing_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Calle Camino a Nextengo 78, Santa Cruz Acayucan, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4761161,
+        "lng": -99.18842959999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4775154802915,
+          "lng": -99.1870673697085
+        },
+        "southwest": {
+          "lat": 19.4748175197085,
+          "lng": -99.18976533029151
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "6757c8856135456c3f60e3520df31f53287f4189",
+    "name": "Imagen Publicitaria",
+    "place_id": "ChIJk2lL8tz-0YUReJRKOIfesbk",
+    "plus_code": {
+      "compound_code": "FRG6+CJ Mexico City, Mexico",
+      "global_code": "76F2FRG6+CJ"
+    },
+    "reference": "ChIJk2lL8tz-0YUReJRKOIfesbk",
+    "scope": "GOOGLE",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "5 de Febrero 417, Centro, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4741157,
+        "lng": -99.18644859999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4755112802915,
+          "lng": -99.18509531970848
+        },
+        "southwest": {
+          "lat": 19.4728133197085,
+          "lng": -99.1877932802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "861aa7d113e9cb6d27c57a6938755115936abf65",
+    "name": "Corporativo Inteltex Sa De Cv",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 4068,
+        "html_attributions": [
+          "Corporativo Inteltex Sa De Cv"
+        ],
+        "photo_reference": "CmRaAAAAHuZnuwh0-Tgb1Hm7t9_dHFUfWHILYC19GY1Ck4aRQ20Z2YWI-YLGtB7SJoLkoACD10_3OezI4tTTTUQpQ6LmKHaHE1L2suNfs1T7H0IK9U5IQl7k6P2ycGtGlElADRKVEhCKXb2eubAJjZf0xyc7LELmGhTQz5RnAM1ttTKkYT7YOPGz9q9VRw",
+        "width": 6691
+      }
+    ],
+    "place_id": "ChIJgz7rzCAC0oURR_zZtyRLXZU",
+    "plus_code": {
+      "compound_code": "FRF7+JC Mexico City, Mexico",
+      "global_code": "76F2FRF7+JC"
+    },
+    "reference": "ChIJgz7rzCAC0oURR_zZtyRLXZU",
+    "scope": "GOOGLE",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Aquiles Elorduy 21, Colonia del Recreo, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4765321,
+        "lng": -99.194711
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4779213302915,
+          "lng": -99.19338926970849
+        },
+        "southwest": {
+          "lat": 19.4752233697085,
+          "lng": -99.19608723029151
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "0da97368363553b9a13fa17ca6fcd6310c7c6aaf",
+    "name": "Compañía Hulera Tornel",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2592,
+        "html_attributions": [
+          "Fernando Moreno"
+        ],
+        "photo_reference": "CmRaAAAAKDgsDeAbHMGL4zkaZW7kLzQLXTYyu-z9R5p1-oUggVjuwHSqNfYix7iCusAa2Y1LNWzVbO5JdyMrRnAc5GBVYKaRWnAczQjO4VwjUlYK6tPKIvaHS9AHJ00iXtx4qCmeEhBLTRrbYnmCL4tf5-xJoXT1GhQcU662CKzi-haWNmBVaFNHtlEQ6g",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJX29HHH0C0oURk36VQz1PYNA",
+    "plus_code": {
+      "compound_code": "FRG4+J4 Mexico City, Mexico",
+      "global_code": "76F2FRG4+J4"
+    },
+    "rating": 3.8,
+    "reference": "ChIJX29HHH0C0oURk36VQz1PYNA",
+    "scope": "GOOGLE",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Camino a Santa Lucía 311, Santa Cruz Acayucan, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4707479,
+        "lng": -99.19613539999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4725985802915,
+          "lng": -99.19462846970848
+        },
+        "southwest": {
+          "lat": 19.46990061970849,
+          "lng": -99.1973264302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+    "id": "03559801ad7eaf98b184dc5235d8929ef13de2de",
+    "name": "Refinería Azcapotzalco Park",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3120,
+        "html_attributions": [
+          "Mauricio Mireles"
+        ],
+        "photo_reference": "CmRaAAAACApcdS-fIzlBpla64AaT2sME2CH7CLjVqDBUZZ2oil06xXdEIYQ79bigYDCKqXa2Fgb3miWbSr07kGUAhJd2_KbkBua_mJ_mvswnfEXIjnbxm1g1hMBqsjdkA3sxKoMSEhBMAXgJut_1f80KFjT5nP6iGhRvz-0jR_feobfrLzsrMnTT6cT_YA",
+        "width": 4160
+      }
+    ],
+    "place_id": "ChIJuwbI73sC0oURbWUT9c0t64I",
+    "plus_code": {
+      "compound_code": "FRC3+7G Mexico City, Mexico",
+      "global_code": "76F2FRC3+7G"
+    },
+    "rating": 4.4,
+    "reference": "ChIJuwbI73sC0oURbWUT9c0t64I",
+    "scope": "GOOGLE",
+    "types": [
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Avenida 5 de Mayo 302, Plenitud, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4795154,
+        "lng": -99.1972895
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4808643802915,
+          "lng": -99.19594051970849
+        },
+        "southwest": {
+          "lat": 19.4781664197085,
+          "lng": -99.1986384802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+    "id": "4a235e9fd46ae8aa119cdeedd112f1c2e138b795",
+    "name": "Gomez Cuetara Hnos",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2560,
+        "html_attributions": [
+          "Gero Vargas"
+        ],
+        "photo_reference": "CmRaAAAA-_lvyCJt4gMifdSBkqCrtVo4Mm8N1pWHrKvxr9wePJ5_WYN0xl_vKb1hGMa0hjepFRhhdK3Doe6qkXB4KPqPV0PVI2t7pKzrpIgxW0zDBwBJofj9JRVEjGZoY_53tudjEhDBOeiMmnkXJlMF3WrRV6idGhSLCQLG-P_xZiiis2NQ9VSwPOWMKA",
+        "width": 1920
+      }
+    ],
+    "place_id": "ChIJdW3-dIAC0oUR_4AndYmt6yY",
+    "plus_code": {
+      "compound_code": "FRH3+R3 Mexico City, Mexico",
+      "global_code": "76F2FRH3+R3"
+    },
+    "rating": 4,
+    "reference": "ChIJdW3-dIAC0oUR_4AndYmt6yY",
+    "scope": "GOOGLE",
+    "types": [
+      "bakery",
+      "store",
+      "point_of_interest",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "Mexico"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4795396,
+        "lng": -99.1960287
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4808634302915,
+          "lng": -99.1945934197085
+        },
+        "southwest": {
+          "lat": 19.4781654697085,
+          "lng": -99.1972913802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "99b0e2e33150b6844d26c6a4481a2db192726f8a",
+    "name": "Sinergia Imagen y Arquitectura",
+    "place_id": "ChIJTZk8MIcC0oURSiKGOcYGShk",
+    "plus_code": {
+      "compound_code": "FRH3+RH Mexico City, Mexico",
+      "global_code": "76F2FRH3+RH"
+    },
+    "rating": 5,
+    "reference": "ChIJTZk8MIcC0oURSiKGOcYGShk",
+    "scope": "GOOGLE",
+    "types": [
+      "general_contractor",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Centeotl 274, Santa Lucia, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4694871,
+        "lng": -99.1882528
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4708742302915,
+          "lng": -99.18690026970849
+        },
+        "southwest": {
+          "lat": 19.46817626970849,
+          "lng": -99.1895982302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+    "id": "0060e867474ec664b3f7e5e868202386f8767a89",
+    "name": "Tanners Expertos en Bronceado",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1536,
+        "html_attributions": [
+          "enrique leon"
+        ],
+        "photo_reference": "CmRaAAAAnA3_Q9O9s5yszLwNFmHbNgFcUcofKmRYKpRiJ-HoSCbTjTFaOQe1briyFnLXdXq8TLvgXetb2Z0cMop40u2JzsLAAXDzjXVAWAX7AqgNDP1P7Rnx8BxVgsuM3B0HNy7hEhA_Z8Y0NBwsd1r8QRQjgxOwGhTQWjeJkAQeSCI7lWpbkwWh03mh9w",
+        "width": 2048
+      }
+    ],
+    "place_id": "ChIJqxGJXIL40YURRQheXkYTmdg",
+    "plus_code": {
+      "compound_code": "FR96+QM Mexico City, Mexico",
+      "global_code": "76F2FR96+QM"
+    },
+    "rating": 3,
+    "reference": "ChIJqxGJXIL40YURRQheXkYTmdg",
+    "scope": "GOOGLE",
+    "types": [
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Avenida Invierno 20, Ángel Zimbrón, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.479,
+        "lng": -99.18816
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4802927802915,
+          "lng": -99.1868309197085
+        },
+        "southwest": {
+          "lat": 19.4775948197085,
+          "lng": -99.18952888029152
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bank_dollar-71.png",
+    "id": "9f814f3478eb6223bb53555c67b680f0903b440c",
+    "name": "Banorte",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3096,
+        "html_attributions": [
+          "Beto Davila"
+        ],
+        "photo_reference": "CmRaAAAAqfPNDSTwReeUJG13rX8bRV1UJyQohR5BsMUxpFQRIfGyb3j9gqery0NTWwdr0joPrw9cesHuml5mx3g2YL_QmHYn1-lUiQSqP2KCGy8fEY9Pb0Qgl6naPWkBdwwAdS2YEhAa3GUBovf65SjJPXnVZqBkGhQaE8w8QdU0238kDwjTp60DWnYSUg",
+        "width": 4128
+      }
+    ],
+    "place_id": "ChIJ64u6xn_40YURLrakFmFFStQ",
+    "plus_code": {
+      "compound_code": "FRH6+HP Mexico City, Mexico",
+      "global_code": "76F2FRH6+HP"
+    },
+    "rating": 2.3,
+    "reference": "ChIJ64u6xn_40YURLrakFmFFStQ",
+    "scope": "GOOGLE",
+    "types": [
+      "bank",
+      "atm",
+      "finance",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Manuel Acuña # 29, Azcapotzalco"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4740344,
+        "lng": -99.1926167
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4753134802915,
+          "lng": -99.19129511970849
+        },
+        "southwest": {
+          "lat": 19.4726155197085,
+          "lng": -99.1939930802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+    "id": "126bc950e5174f8b19f698ae751e110d6d175307",
+    "name": "Tacos La Abuela",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "Daniel Valle"
+        ],
+        "photo_reference": "CmRaAAAA_gz4pOfV6b1UKHJR2mDqmADHWz7PRdT_rchcpZN2IHsH5cyOhN7R9UEbDP6WjHSQYEcb2bT2muTbhjjI9rP3hI77vmxIy60HQdbmLj-flJUBtJeSwnAQReFEbSP1ti6LEhBMwV3qpFBFd9mcFGiWdNCdGhQIZ6tIruPE714qYPVKIRCupPFPgA",
+        "width": 2268
+      }
+    ],
+    "place_id": "ChIJBQ9i-34C0oURUxz13I-l5IE",
+    "rating": 3.8,
+    "reference": "ChIJBQ9i-34C0oURUxz13I-l5IE",
+    "scope": "GOOGLE",
+    "types": [
+      "meal_delivery",
+      "restaurant",
+      "point_of_interest",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "Calle Camino a Nextengo 137, Azcapotzalco, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4750569,
+        "lng": -99.1886533
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4766310302915,
+          "lng": -99.18730871970848
+        },
+        "southwest": {
+          "lat": 19.4739330697085,
+          "lng": -99.1900066802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+    "id": "45d765f5efb36cf6daaa324d382a7542e8dd1573",
+    "name": "Ford Azcapotzalco",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1080,
+        "html_attributions": [
+          "Joel Sánchez"
+        ],
+        "photo_reference": "CmRZAAAAmhuCOWachN6vVaHHU7S8i4vXY6FrAPKUYsuUS_A7G2TTzmePWVgvl3RfBrXqM-rwGbtzruBmfynG-y8W6CeXJN2Y0EMo_tvgOVPZ0X0YshlfLisc2MfNmCbkgrKiHBZSEhAZ8gRdh3beUAEZtrL9-MbrGhRchsoWgcwI_Lee3aMu5teZry24fA",
+        "width": 1920
+      }
+    ],
+    "place_id": "ChIJtxW3yoH40YURFAKK-XBig_o",
+    "plus_code": {
+      "compound_code": "FRG6+2G Mexico City, Mexico",
+      "global_code": "76F2FRG6+2G"
+    },
+    "rating": 4.2,
+    "reference": "ChIJtxW3yoH40YURFAKK-XBig_o",
+    "scope": "GOOGLE",
+    "types": [
+      "car_dealer",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Avenida Aquiles Serdán 431, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.464946,
+        "lng": -99.190273
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4662887302915,
+          "lng": -99.1888508197085
+        },
+        "southwest": {
+          "lat": 19.4635907697085,
+          "lng": -99.19154878029151
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "24510a296b22744d07b56376318a69b1d01ffe4e",
+    "name": "Corporativo Rayonera",
+    "opening_hours": {
+      "open_now": false
+    },
+    "place_id": "ChIJWXguBYL40YURrS9CwXCLmVI",
+    "plus_code": {
+      "compound_code": "FR75+XV Mexico City, Mexico",
+      "global_code": "76F2FR75+XV"
+    },
+    "reference": "ChIJWXguBYL40YURrS9CwXCLmVI",
+    "scope": "GOOGLE",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Avenida Aquiles Serdán 46, Ángel Zimbrón, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4660768,
+        "lng": -99.1865509
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4674257802915,
+          "lng": -99.1852019197085
+        },
+        "southwest": {
+          "lat": 19.4647278197085,
+          "lng": -99.18789988029151
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+    "id": "ed21a42aa9b5776c6b670e1eba30ad3e888a70d0",
+    "name": "La Casa de Toño",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 600,
+        "html_attributions": [
+          "La Casa de Toño"
+        ],
+        "photo_reference": "CmRaAAAAGq54bll3nY1SLVWuWkXqwmXDPX6NW7pI5nTGzo550nqrB7TVkyDvd3B0haxb-JFL1IR2q-Mbv9P9jhzzt_lYs0cGW9i1Irwid1esGcFs4n6PTJq9crQivNkPyOF-ILAvEhCnbVlABBrr017H9Emh3Y_bGhRTqhgn_QerFT3ywBnMzf5YCaBAKA",
+        "width": 800
+      }
+    ],
+    "place_id": "ChIJj76l0pz40YUR2Tk84QcQk_k",
+    "plus_code": {
+      "compound_code": "FR87+C9 Mexico City, Mexico",
+      "global_code": "76F2FR87+C9"
+    },
+    "price_level": 1,
+    "rating": 4.5,
+    "reference": "ChIJj76l0pz40YUR2Tk84QcQk_k",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "point_of_interest",
+      "food",
+      "establishment"
+    ],
+    "vicinity": "Calle Floresta 77 4 blocks from the Refinería Metro, between Clavería and Nilo, Claveria, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.478287,
+        "lng": -99.19437099999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4796703302915,
+          "lng": -99.1931433697085
+        },
+        "southwest": {
+          "lat": 19.47697236970849,
+          "lng": -99.1958413302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "3a096236d0071f4e93aee142ee15137a371fb170",
+    "name": "Mudanzas Gou",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 480,
+        "html_attributions": [
+          "Eduardo Gou"
+        ],
+        "photo_reference": "CmRaAAAAwtBg0cHuqlnoljFchw55QsBUHMNQtq-SS64fcUJEzCgIyCfY7MdwmbXmMvOQSdM5WDc0GeGEnMWAcmgm28u2_15gKZhKIwSKaaOr9Ts2h5gVIuh91G4RQnNi28c1lyG9EhAD7He41hof1AazSr4PmzF2GhTtIW0W-E5K3fuawV9OsJ_zG-r3sQ",
+        "width": 640
+      }
+    ],
+    "place_id": "ChIJ0z29u4AC0oURgqR7XdKFw40",
+    "plus_code": {
+      "compound_code": "FRH4+87 Mexico City, Mexico",
+      "global_code": "76F2FRH4+87"
+    },
+    "rating": 4.5,
+    "reference": "ChIJ0z29u4AC0oURgqR7XdKFw40",
+    "scope": "GOOGLE",
+    "types": [
+      "moving_company",
+      "storage",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Nueva Santo Domingo 163, Santa Lucia, Ciudad de México"
+  },
+  {
+    "geometry": {
+      "location": {
+        "lat": 19.4735538,
+        "lng": -99.201824
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 19.4749027802915,
+          "lng": -99.20047501970849
+        },
+        "southwest": {
+          "lat": 19.4722048197085,
+          "lng": -99.2031729802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+    "id": "7d8d01ccbc75981f154a5e945822a3d6ba068e76",
+    "name": "Wyn of Mexico Chemicals, S.A. De C.V.",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 512,
+        "html_attributions": [
+          "Wyn de México Productos Quimicos, S.A. De C.V."
+        ],
+        "photo_reference": "CmRaAAAAqSLCTRkdQzsn3IMqOUFzL-_am24TOACmqbTuDbwE-g27dYeZYdsjghDCukpAsh6yYl4hpMa8HQ9EYSJv_4wIxb0U79Xr9r9qiTCclvdkdy-1nJRUp11rT5VJ6zXNJCEqEhAQUTt9btI4Jm2mawxJ4KJBGhRVckHimQxPcClef4kWSzFnkE5-Hg",
+        "width": 640
+      }
+    ],
+    "place_id": "ChIJRauDgoAC0oURtb-hDtWOt0M",
+    "plus_code": {
+      "compound_code": "FQFX+C7 Mexico City, Mexico",
+      "global_code": "76F2FQFX+C7"
+    },
+    "rating": 4.3,
+    "reference": "ChIJRauDgoAC0oURtb-hDtWOt0M",
+    "scope": "GOOGLE",
+    "types": [
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Camino Sta Lucia 383, San Miguel Amantla, Ciudad de México"
+  }
+]
