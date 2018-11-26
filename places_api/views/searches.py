@@ -3,7 +3,6 @@
 Searches views
 """
 from rest_framework.views import APIView
-from rest_framework import mixins, viewsets
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
@@ -23,5 +22,7 @@ class SearchesViewSet(APIView):
         search_data = SearchesSerializer(data=self.request.query_params)
         search_data.is_valid(raise_exception=True)
         # getting the maps info
-        response = get_info(search_data.validated_data)
+        response = get_info(search_data.validated_data,
+                            (self.request.query_params['lat'],
+                             self.request.query_params['long']))
         return Response(response)
