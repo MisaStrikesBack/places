@@ -4,7 +4,14 @@
     "pk": 1,
     "fields": {
       "place_id": "placeid_01",
-      "user": 1
+      "user": 1,
+      "name": "lugar uno",
+      "api_id": "api_id01",
+      "rating": 4.5,
+      "vicinity": "Una calle",
+      "lat": 19.478358,
+      "long": -99.202149,
+      "creation_date": "2018-06-14T18:06:14.545Z"
     }
   },
   {
@@ -12,7 +19,14 @@
     "pk": 2,
     "fields": {
       "place_id": "placeid_02",
-      "user": 1
+      "user": 1,
+      "name": "lugar dos",
+      "api_id": "api_id02",
+      "rating": 4.9,
+      "vicinity": "Dos calle",
+      "lat": 19.460536,
+      "long": -99.168330,
+      "creation_date": "2018-06-13T18:06:14.545Z"
     }
   },
   {
@@ -20,15 +34,29 @@
     "pk": 3,
     "fields": {
       "place_id": "placeid_03",
-      "user": 2
+      "user": 2,
+      "name": "lugar tres",
+      "api_id": "api_id03",
+      "rating": 4.1,
+      "vicinity": "tres calle",
+      "lat": 19.441241,
+      "long":  -99.139700,
+      "creation_date": "2018-06-12T18:06:14.545Z"
     }
   },
   {
     "model": "places_api.favorite",
     "pk": 4,
     "fields": {
-      "place_id": "placeid_03",
-      "user": 2
+      "place_id": "placeid_04",
+      "user": 2,
+      "name": "lugar cuatro",
+      "api_id": "api_id04",
+      "rating": 3.9,
+      "vicinity": "cuatro calle",
+      "lat": 19.424319,
+      "long":  -99.126003,
+      "creation_date": "2018-06-12T18:06:14.545Z"
     }
   }
 ]

@@ -1,0 +1,912 @@
+{
+  "html_attributions": [],
+  "next_page_token": "CrQCKgEAAEwwyCNumf81BiymgkQSiD3sWjtqZVoFkx4Gw1O0lo9I6fXNPyeg3G3UT7Dp0hc3EYpND3G8iK3Xthj5gefIu4p2iXLJjBqKtVazs4OCVE1rvSeJTjBCmWkF4Rszh5wBCYXdaI_dZn5uFYolH7FX6BINonsmw6iqqkNkt-hQeg4PFt5jkgBlwWb7B5_XzGVkV9zOa2b5PzrD2FBqC22IV6aC9h4lbLPsFS9S08F-D9P_A9Ac7KWiUYaQQh9fhQlfmd65vWZBDXOZbAOWfECW_NCM77cVLreZ18AFq7ex_xC_rj-M5AR2lZT5NqgpZ0d53HfQnyebHxN2idsB1yQbeGFLYtwDk27UgcTc6Yb5PsQ9NNUyRN_vkZFSTkra9dbppLyoDD6DmPz8gixtRiMfOwwSEAziWQworc62dx7x-jYgD7kaFMTTaNAxOcBQnJ7j07tD6TvDB6qT",
+  "results": [
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4730008,
+          "lng": -99.1885226
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4743524802915,
+            "lng": -99.18721886970849
+          },
+          "southwest": {
+            "lat": 19.4716545197085,
+            "lng": -99.18991683029149
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "77cbfa939e1865ff49880765f853b8df69b0b59f",
+      "name": "Centenario Salones De Fiestas",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116613314440660997021/photos\">Mixel Adm</a>"
+          ],
+          "photo_reference": "CmRaAAAAoyRmR3TbstpYXI3fECuvo_aaQcabulcjtDxtzN4NW3783FyEIzLg6IHO1wDrjw0w5YpDUrQDzPqjffneWRLdLFUfjrDnzkkbE9vAT0wtkwt8DRvPbdcPDqcACcHGDb0-EhCTZnUyrN3pSb3eYC02t_KHGhR3G0n5jKtEiBUnxio27pKP58TtyA",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJ-UlR64H40YURYL3t4Rca1gw",
+      "plus_code": {
+        "compound_code": "FRF6+6H Ciudad de México, México",
+        "global_code": "76F2FRF6+6H"
+      },
+      "rating": 4.1,
+      "reference": "ChIJ-UlR64H40YURYL3t4Rca1gw",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Centenario 367, Nextengo, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.467098,
+          "lng": -99.19498259999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4682439802915,
+            "lng": -99.19369701970848
+          },
+          "southwest": {
+            "lat": 19.4655460197085,
+            "lng": -99.1963949802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+      "id": "5921d83485fbce6c2d04445d65a048b399dc6806",
+      "name": "Skatepark Refineria",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110556607062916424583/photos\">Daniel Valle</a>"
+          ],
+          "photo_reference": "CmRaAAAANzxKhSpNY4a2rErNBVp4R3SyaPbx2wpI770t9gF3sGP966n7LNaUdPE7aT_18vDvUo84ivoo59bf4kYTFVEaCeTk6Pzwq6bduhYAfN5dFYczvwPuFmWgowZZoJ8Tu0MPEhAnVBG2G8GKYSgsncnZuLUEGhT07KtWC9BN1f1fky-uJcKDxk2b1Q",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJR2Yx83kC0oURs3kgnNCL91s",
+      "plus_code": {
+        "compound_code": "FR84+R2 Ciudad de México, México",
+        "global_code": "76F2FR84+R2"
+      },
+      "rating": 4.6,
+      "reference": "ChIJR2Yx83kC0oURs3kgnNCL91s",
+      "scope": "GOOGLE",
+      "types": [
+        "park",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Av. 5 de Mayo 290, San Lorenzo Tlaltenango, Miguel Hidalgo"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4775198,
+          "lng": -99.19639049999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4788687802915,
+            "lng": -99.19504151970848
+          },
+          "southwest": {
+            "lat": 19.4761708197085,
+            "lng": -99.19773948029149
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "5308550773d180024315638162a2009619ff069d",
+      "name": "seca Sistemas Médicos de Medición SA de CV",
+      "opening_hours": {
+        "open_now": false
+      },
+      "place_id": "ChIJFyytPlv40YUR-OsLx-bsnLs",
+      "plus_code": {
+        "compound_code": "FRH3+2C Ciudad de México, México",
+        "global_code": "76F2FRH3+2C"
+      },
+      "rating": 4.9,
+      "reference": "ChIJFyytPlv40YUR-OsLx-bsnLs",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Centeotl 223-A, San Antonio, Azcapotzalco"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4728407,
+          "lng": -99.19255389999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4738614302915,
+            "lng": -99.19098166970849
+          },
+          "southwest": {
+            "lat": 19.4711634697085,
+            "lng": -99.19367963029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "8f6a9f9be6cf7c5c8d347de045ce6e577f7dc7ff",
+      "name": "Walmart Azcapotzalco",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100086368820209265220/photos\">Juan José Monroy Moreno</a>"
+          ],
+          "photo_reference": "CmRaAAAAXxAuhaT-1yjhFxMSthxt2kv1refwgjRRz5JWrp7oFCs0QCOIcFw0h1wgKEUdy2OjaNb4Fl6Ej1uUi7c4Ci04_c8YxQW_Il2bqbRAT6rkhTEcW8razgD6GB67lEiiIXQ8EhCx0ZW9lFD8NkrRHIJ8IXG6GhSpZOT5hL_mI02V9QyO2reVUhb5qw",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJO0lU038C0oUR260PKftz2r8",
+      "plus_code": {
+        "compound_code": "FRF4+4X Ciudad de México, México",
+        "global_code": "76F2FRF4+4X"
+      },
+      "price_level": 1,
+      "rating": 4,
+      "reference": "ChIJO0lU038C0oUR260PKftz2r8",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "grocery_or_supermarket",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "vicinity": "Calle Camino a Nextengo 78, Santa Cruz Acayucan, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4715642,
+          "lng": -99.19111599999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4728610802915,
+            "lng": -99.18988611970849
+          },
+          "southwest": {
+            "lat": 19.4701631197085,
+            "lng": -99.1925840802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "3ec666299df5f3b79082d57ce39a504cb861d905",
+      "name": "Suburbia Azcapotzalco",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3264,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103621183042245133049/photos\">Daniela Avilés</a>"
+          ],
+          "photo_reference": "CmRaAAAAuAxGgEYZ8R7q8ad32VVkMT92gtwf_ZxDFCF_WfRcVREhGQOCUnrXI-BC1TYfxbtQvfSvG8ma0KqdmlvkDWw8xE42EvQkSNXMJ1YgdQJPXvA2el8VevknfEs4_RNp4KeOEhD4RD8T63HJvzmAIWWRg7ZoGhRBwGz-tC2E_OdrTxqonmWsswZr5g",
+          "width": 2448
+        }
+      ],
+      "place_id": "ChIJ-c4zXoD40YURcv7DJT6VOng",
+      "plus_code": {
+        "compound_code": "FRC5+JH Ciudad de México, México",
+        "global_code": "76F2FRC5+JH"
+      },
+      "rating": 4.1,
+      "reference": "ChIJ-c4zXoD40YURcv7DJT6VOng",
+      "scope": "GOOGLE",
+      "types": [
+        "clothing_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Calle Camino a Nextengo 78, Santa Cruz Acayucan, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4795154,
+          "lng": -99.1972895
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4808643802915,
+            "lng": -99.19594051970849
+          },
+          "southwest": {
+            "lat": 19.4781664197085,
+            "lng": -99.19863848029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "4a235e9fd46ae8aa119cdeedd112f1c2e138b795",
+      "name": "Gómez Cuétara Hermanos",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2560,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117185002492981828446/photos\">Gero Vargas</a>"
+          ],
+          "photo_reference": "CmRaAAAA_mrWalJUWrsHjKG5tGRbhEf68YSbcDOCSMMTBqxF9dF1KmDPc-H8EpW-nEoyl3rSEO3xdp7Z7NpQNgFZb4SGEUpvsep3tgZHJHTleNRDay7SCOhvwn8DnJgau8wSic6AEhDcwNdclXYJK9A69HtXNs1kGhQNX5ElZ6Kya0D7VF0xczSVtphuYA",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJdW3-dIAC0oUR_4AndYmt6yY",
+      "plus_code": {
+        "compound_code": "FRH3+R3 Ciudad de México, México",
+        "global_code": "76F2FRH3+R3"
+      },
+      "rating": 4,
+      "reference": "ChIJdW3-dIAC0oUR_4AndYmt6yY",
+      "scope": "GOOGLE",
+      "types": [
+        "bakery",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "vicinity": "Mexico"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4765321,
+          "lng": -99.194711
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4779213302915,
+            "lng": -99.19338926970849
+          },
+          "southwest": {
+            "lat": 19.4752233697085,
+            "lng": -99.19608723029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "0da97368363553b9a13fa17ca6fcd6310c7c6aaf",
+      "name": "Empresas Tornel",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107151751086321892077/photos\">Fernando Moreno</a>"
+          ],
+          "photo_reference": "CmRaAAAAitTkDlS7W2CVZxOpBPdbkI9NzMcf4Q7oVvvc5krb4e9EAOgL1BnbodhJK7pYNpDiQC_0yLP3FTA1j8joU5-OLE7gcYOdZxry5xiAbbAqbt-EiLYQSDUmYOqIIprGt8-XEhDn9R8smMAlVHl1RjS4qYh8GhTv4aNuseN5L66DMb5-GxKXt3Z0iw",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJX29HHH0C0oURk36VQz1PYNA",
+      "plus_code": {
+        "compound_code": "FRG4+J4 Ciudad de México, México",
+        "global_code": "76F2FRG4+J4"
+      },
+      "rating": 3.8,
+      "reference": "ChIJX29HHH0C0oURk36VQz1PYNA",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Camino a Santa Lucía 311, Santa Cruz Acayucan, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4735538,
+          "lng": -99.201824
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4749027802915,
+            "lng": -99.20047501970849
+          },
+          "southwest": {
+            "lat": 19.4722048197085,
+            "lng": -99.2031729802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "7d8d01ccbc75981f154a5e945822a3d6ba068e76",
+      "name": "Wyn de México Productos Quimicos, S.A. De C.V.",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 512,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106046540744862528237/photos\">Wyn de México Productos Quimicos, S.A. De C.V.</a>"
+          ],
+          "photo_reference": "CmRaAAAAZd7JSynlH8NPDhwLooDH1p2GESTGE7U5k-xFVPdluBediyEUksKPp4AF9VfRAdPFZ3Lb_NavDa2xf1vZarEIeApunenDrsNBqs_2NUPOfNRWjdfW3JPhIXMy6kabTkCWEhAMR9a-mP-qdJOvGwH69ysdGhScahj9FXRf01ChHJH4SFp1LxkkNw",
+          "width": 640
+        }
+      ],
+      "place_id": "ChIJRauDgoAC0oURtb-hDtWOt0M",
+      "plus_code": {
+        "compound_code": "FQFX+C7 Ciudad de México, México",
+        "global_code": "76F2FQFX+C7"
+      },
+      "rating": 4.3,
+      "reference": "ChIJRauDgoAC0oURtb-hDtWOt0M",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Camino Sta Lucia 383, San Miguel Amantla, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4795396,
+          "lng": -99.1960287
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4808634302915,
+            "lng": -99.1945934197085
+          },
+          "southwest": {
+            "lat": 19.4781654697085,
+            "lng": -99.1972913802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "99b0e2e33150b6844d26c6a4481a2db192726f8a",
+      "name": "Sinergia Imagen y Arquitectura",
+      "place_id": "ChIJTZk8MIcC0oURSiKGOcYGShk",
+      "plus_code": {
+        "compound_code": "FRH3+RH Ciudad de México, México",
+        "global_code": "76F2FRH3+RH"
+      },
+      "rating": 5,
+      "reference": "ChIJTZk8MIcC0oURSiKGOcYGShk",
+      "scope": "GOOGLE",
+      "types": [
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Centeotl 274, Santa Lucia, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4707479,
+          "lng": -99.19613539999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4725985802915,
+            "lng": -99.19462846970848
+          },
+          "southwest": {
+            "lat": 19.46990061970849,
+            "lng": -99.1973264302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+      "id": "03559801ad7eaf98b184dc5235d8929ef13de2de",
+      "name": "Parque Refinería Azcapotzalco",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116835372039836353036/photos\">Mauricio Mireles</a>"
+          ],
+          "photo_reference": "CmRaAAAA7C_ATg2kuDWq4lth4HHhEODP7DTTBgp2mT-XpriOGNYA03IxzHIyz9Skh2tDzyusTJ6blm-oZ0lv0-Ldn4LR1BEhG6EmxzdUEiyrbFJTQ5VaEt58xsDUCDgjDJunuh7kEhB8wtBA_87Q6JCfSr3RDlv4GhQrKWUoZNoZVcb8yW6Cb7WXstYNqg",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJuwbI73sC0oURbWUT9c0t64I",
+      "plus_code": {
+        "compound_code": "FRC3+7G Ciudad de México, México",
+        "global_code": "76F2FRC3+7G"
+      },
+      "rating": 4.4,
+      "reference": "ChIJuwbI73sC0oURbWUT9c0t64I",
+      "scope": "GOOGLE",
+      "types": [
+        "park",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Avenida 5 de Mayo 302, Plenitud, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4740344,
+          "lng": -99.1926167
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4753134802915,
+            "lng": -99.19129511970849
+          },
+          "southwest": {
+            "lat": 19.4726155197085,
+            "lng": -99.19399308029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "id": "126bc950e5174f8b19f698ae751e110d6d175307",
+      "name": "Tacos La Abuela",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110556607062916424583/photos\">Daniel Valle</a>"
+          ],
+          "photo_reference": "CmRaAAAAr8CoLu1625ZzW0l40TyftL7HSDi48WldJzsk_x89MlUX3iORjgXFLFQtvneqbH75Pj3iR8KHmeFAWyJJdfgebkAuJSeGJetLVEfZDy3i42IQ8Y5KTepIAEhneRl1jMWMEhCiReIaqyonEng2pPb2boBfGhSe0mYigaaB8L94TQ4LVhCJyL3wPQ",
+          "width": 2268
+        }
+      ],
+      "place_id": "ChIJBQ9i-34C0oURUxz13I-l5IE",
+      "plus_code": {
+        "compound_code": "FRF4+JX Ciudad de México, México",
+        "global_code": "76F2FRF4+JX"
+      },
+      "rating": 3.8,
+      "reference": "ChIJBQ9i-34C0oURUxz13I-l5IE",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_delivery",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "vicinity": "Calle Camino a Nextengo 137, Azcapotzalco, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.478287,
+          "lng": -99.19437099999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4796703302915,
+            "lng": -99.19314336970849
+          },
+          "southwest": {
+            "lat": 19.47697236970849,
+            "lng": -99.1958413302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "3a096236d0071f4e93aee142ee15137a371fb170",
+      "name": "Mudanzas Gou",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 480,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111530030440879114474/photos\">Eduardo Gou</a>"
+          ],
+          "photo_reference": "CmRaAAAAc2qnCG6-8wl8Kv1khMBeezZn4QmF7QpYIyFzyoJtNOghRUpocjmmlodKs4nEzPD7s2XJyryxlCiXu6vh6_d3T4NeeY1Y6qZI6H1himtsf9y_VwEBGC_QBGTWE6zUEgYpEhBkJ-5NhExhuXf4jjNS7d57GhR1ZS1NKSEyzUWVPCiGq9IJZxTRnw",
+          "width": 640
+        }
+      ],
+      "place_id": "ChIJ0z29u4AC0oURgqR7XdKFw40",
+      "plus_code": {
+        "compound_code": "FRH4+87 Ciudad de México, México",
+        "global_code": "76F2FRH4+87"
+      },
+      "rating": 4.5,
+      "reference": "ChIJ0z29u4AC0oURgqR7XdKFw40",
+      "scope": "GOOGLE",
+      "types": [
+        "moving_company",
+        "storage",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Nueva Santo Domingo 163, Santa Lucia, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.479059,
+          "lng": -99.1963732
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.48055883029151,
+            "lng": -99.19497261970849
+          },
+          "southwest": {
+            "lat": 19.4778608697085,
+            "lng": -99.1976705802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "5ef0570bb0c93ad669f73183939883a18cbbe2e8",
+      "name": "Euromaquinas",
+      "place_id": "ChIJdW3-dIAC0oUR5qmlLjkBPlE",
+      "plus_code": {
+        "compound_code": "FRH3+JF Ciudad de México, México",
+        "global_code": "76F2FRH3+JF"
+      },
+      "rating": 5,
+      "reference": "ChIJdW3-dIAC0oUR5qmlLjkBPlE",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Tochtli 312, Parque Industrial, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4741276,
+          "lng": -99.20268059999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4749168302915,
+            "lng": -99.20117016970849
+          },
+          "southwest": {
+            "lat": 19.4722188697085,
+            "lng": -99.2038681302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "cede9159bfb7de03778661ec3c4a75bdd51dfe61",
+      "name": "FEMSA Logística",
+      "photos": [
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109188274056276820337/photos\">poly galic</a>"
+          ],
+          "photo_reference": "CmRaAAAAEn8OUfsBZBufARUnWwcQz1JYQm8GNL2GCeqeZMGPIgH65SvuHsCW02uGfqKj7QTX4UpNZFKAH5HYES3sL1KqnxXWEEM0xSkDYZyQV-f5QEOo3sgQmKX6j8L8kEXW8ZcvEhDYOKCndRHw02z7zUoda3-MGhT1hHoHwDhQKC4MlIPbVOX_KbYIqA",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJvWrOE2MC0oURZ2p4K-3OvYM",
+      "plus_code": {
+        "compound_code": "FQFW+MW Ciudad de México, México",
+        "global_code": "76F2FQFW+MW"
+      },
+      "rating": 4.3,
+      "reference": "ChIJvWrOE2MC0oURZ2p4K-3OvYM",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Camino a Santa Lucía 120, San Miguel Amantla, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4769882,
+          "lng": -99.19379970000001
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4784087302915,
+            "lng": -99.1924988197085
+          },
+          "southwest": {
+            "lat": 19.4757107697085,
+            "lng": -99.19519678029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "e2bbda182c8d01be87acf4c4bfbbb2745cb63172",
+      "name": "Bolsas Y Papeles Morysan Sa Cv",
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116566849584162275375/photos\">Antonio Solis Sandoval</a>"
+          ],
+          "photo_reference": "CmRaAAAAIyMiSemD9N9evcdSYe4HSIh9M4BlezymhbEs3lGJOwcQjGmmQNm1nEnLNAHT4FoPgcYB6CCXW0werwFoBSwaLk2s_ALf43iiSYGzSC9bC-kTRxQX3GfS53VjzcHT1Lq0EhAvZQSawiRp8Bw47AxT5-j9GhT2X-PtqnIL_YGAvUoBISjtN19ssg",
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJASMQ33wC0oUR4SDbQI5L4vE",
+      "plus_code": {
+        "compound_code": "FRG4+QF Ciudad de México, México",
+        "global_code": "76F2FRG4+QF"
+      },
+      "rating": 2.8,
+      "reference": "ChIJASMQ33wC0oUR4SDbQI5L4vE",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Camino a Santa Lucía 162, San Francisco Tetecala, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.477469,
+          "lng": -99.1926117
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4788005302915,
+            "lng": -99.1912068197085
+          },
+          "southwest": {
+            "lat": 19.47610256970849,
+            "lng": -99.19390478029152
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "87bffe15a8c62f82cb71e31fd750f561908bdfcc",
+      "name": "Taidi Iap",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 400,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116595215614515740343/photos\">Taidi Iap</a>"
+          ],
+          "photo_reference": "CmRaAAAAc4kI9G7qhSLYk6e6R3-IgFbqSRb6Yy2Ve9ALMGZM7j098TkkC8V2oc96QGjEdapD16dzobcJI9O1TyRdHNY55YZr2lPxtjJfI8RvjqkOfUNc8mTocWNV-xFdPPlIEtrUEhB7OErZHIPSYM8-pyiH_IE2GhSGsy7zXXN54SHP1kXmSYFZEpXMQg",
+          "width": 980
+        }
+      ],
+      "place_id": "ChIJZxGp1H8C0oURygcQIr98tRY",
+      "plus_code": {
+        "compound_code": "FRG4+XX Ciudad de México, México",
+        "global_code": "76F2FRG4+XX"
+      },
+      "rating": 4.6,
+      "reference": "ChIJZxGp1H8C0oURygcQIr98tRY",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Santa Cruz Acayucan 184, Santa Cruz Acayucan, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.474234,
+          "lng": -99.2010971
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4755829802915,
+            "lng": -99.19974811970849
+          },
+          "southwest": {
+            "lat": 19.4728850197085,
+            "lng": -99.20244608029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "56f5a0816055434e24be3b69abe60cf36e927445",
+      "name": "Galletas Cuétara",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2976,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111332818180300272594/photos\">Julio Cesar Fuentes Ramirez</a>"
+          ],
+          "photo_reference": "CmRaAAAAkKAH32rXecH1estsecIePGu9TiGwfuBL8RyjiV1V-qhcoqXqq6vU0CF-NALnteSnbkS6Xfjl6PiPoaxpsg1lN00CfAz7oGXx8tOp_LgC7HQwQk36qZLwDhHWBZYd5NOVEhBqVx2HuzwtakXLiASMIwXZGhTwHx8nEgvmavwmyKYQy3PZiDNhtg",
+          "width": 3968
+        }
+      ],
+      "place_id": "ChIJJ6f9nYQC0oURbsp2bZUY7Yw",
+      "plus_code": {
+        "compound_code": "FQFX+MH Ciudad de México, México",
+        "global_code": "76F2FQFX+MH"
+      },
+      "rating": 3.9,
+      "reference": "ChIJJ6f9nYQC0oURbsp2bZUY7Yw",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "vicinity": "Av. Tezozomoc 30, San Miguel Amantla, Azcapotzalco"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4733263,
+          "lng": -99.1983831
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4746752802915,
+            "lng": -99.1970341197085
+          },
+          "southwest": {
+            "lat": 19.47197731970849,
+            "lng": -99.19973208029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+      "id": "153b3c50f3bd51b4e6de453f9bfb119280280623",
+      "name": "Sep",
+      "place_id": "ChIJ79Aq9HwC0oURXxxQR2M60Zs",
+      "plus_code": {
+        "compound_code": "FRF2+8J Ciudad de México, México",
+        "global_code": "76F2FRF2+8J"
+      },
+      "reference": "ChIJ79Aq9HwC0oURXxxQR2M60Zs",
+      "scope": "GOOGLE",
+      "types": [
+        "local_government_office",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Gasolina S/n, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.476697,
+          "lng": -99.192757
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4780384802915,
+            "lng": -99.19138446970851
+          },
+          "southwest": {
+            "lat": 19.4753405197085,
+            "lng": -99.19408243029152
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "f20458ee51202fbfe9f5b13ed67eac1397f2b606",
+      "name": "Técnicos En Transmisiones Electromecánicas S.A. de C.V.",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108651436642159134729/photos\">Abel García</a>"
+          ],
+          "photo_reference": "CmRaAAAApmbuCHRPvbNHrRa4vMdlrM-cnkMFR4oXqsfaJtgUGbla64YvKABeibseiGADY4d8TyFOd64V8uuoPTzFPmQLd5qRiUJtLzi2muaF1MjPuzrp3ryy46Gbb70cQ0eFzB_mEhACdG1wVVXt29grpLgmze7NGhQlO05a_fq-B4xMgQCFri4_I8Bxlw",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJwzFVLX4C0oURW5kAMX_mZ8w",
+      "plus_code": {
+        "compound_code": "FRG4+MV Ciudad de México, México",
+        "global_code": "76F2FRG4+MV"
+      },
+      "rating": 4.3,
+      "reference": "ChIJwzFVLX4C0oURW5kAMX_mZ8w",
+      "scope": "GOOGLE",
+      "types": [
+        "car_repair",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Santa Cruz Acayucan 165, Santa Cruz Acayucan, Ciudad de México"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 19.4756678,
+          "lng": -99.1933334
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 19.4776555802915,
+            "lng": -99.1924194197085
+          },
+          "southwest": {
+            "lat": 19.4749576197085,
+            "lng": -99.19511738029151
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id": "41a7c792fff523ec6da27448aad4f9d56ae3ae0c",
+      "name": "Holz Chemical's De México, S.A. De C.V.",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 567,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100977651869032771351/photos\">Holz Chemical&#39;s De México, S.A. De C.V.</a>"
+          ],
+          "photo_reference": "CmRaAAAAawiOOeTCHSyEWpNQ4MLkoBOSPIcgH8t_iO5gH-BXF9DCRJ_rVYNzcfllmAD5Q8ovHcUGL4wXI02NqdGn9GecB4Yqti4cjg2TvXi9eiJ1C5Fz1CQgTIopt_39B0PFoPDvEhCS7E1Vxve1CGwf-rsiAhclGhTCw_9fGPLTng-9KAIZS649uJC2Kw",
+          "width": 567
+        }
+      ],
+      "place_id": "ChIJ9-wCqX0C0oURyHi6JB5IZi8",
+      "plus_code": {
+        "compound_code": "FRG4+7M Ciudad de México, México",
+        "global_code": "76F2FRG4+7M"
+      },
+      "reference": "ChIJ9-wCqX0C0oURyHi6JB5IZi8",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Camino a Santa Lucía 159, San Antonio, Ciudad de México"
+    }
+  ],
+  "status": "OK"
+}

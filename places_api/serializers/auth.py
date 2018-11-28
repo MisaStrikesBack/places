@@ -31,7 +31,8 @@ class SignInSerializer(serializers.Serializer):
         error_messages={
             'required': SUBMIT_PASSWORD,
             'blank': VALID_PASSWORD
-        }
+        },
+        style={'input_type': 'password'}
     )
 
 
