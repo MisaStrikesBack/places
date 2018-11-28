@@ -5,7 +5,7 @@ places_api viewset router
 from django.urls import path
 from rest_framework.routers import SimpleRouter
 
-from places_api.views import FavoritesViewSet, SearchesViewSet
+from places_api.views import FavoritesViewSet, SearchViewSet
 
 api_router = SimpleRouter()
 
@@ -14,5 +14,5 @@ api_router.register(
 
 # non mixin views
 api_router.urls.append(
-    path('search/', SearchesViewSet.as_view(), name='search'),
+    path('search/', SearchViewSet.as_view(), name='search'),
 )

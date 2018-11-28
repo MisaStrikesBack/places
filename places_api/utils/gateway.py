@@ -3,11 +3,12 @@
 External api consumption file
 """
 import requests
+# import json
 
 from django.core.cache import cache
 
-from places_api.constants import api_request
-from places_api.serializers import PlaceSerializer
+from places_api.constants import API_REQUEST
+from places_api.serializers import ApiResponseSerializer
 
 
 def set_order(url, data):
@@ -34,7 +35,9 @@ def set_keyword(url, data):
 
 def get_info(data, coords):
     # setting the base url
-    url = "{0}location={1},{2}&".format(api_request, data['lat'], data['long'])
+    url = "{0}location={1},{2}&".format(API_REQUEST, data['lat'], data['long'])
+    # if data.get('next_page_token'):
+    #     print(len(data['next_page_token']))
     # setting order
     url = set_order(url, data)
     # setting ordering
@@ -44,20 +47,14 @@ def get_info(data, coords):
         print('old query')
         response = cache.get('response')
     else:
+        print('cached')
         # setting the
         cache.set('url', url)
-
-        response = PlaceSerializer(requests.get(url).json()['results'],
-                                   many=True,
-                                   context={'coords': coords})
+        response = ApiResponseSerializer(requests.get(url).json(),
+                                         context={'coords': coords})
         cache.set('response', response)
-    # response = PlaceSerializer(requests.get(url).json()['results'],
-    #                            many=True,
-    #                            context={'coords': coords})
-    # json_file = open('places_api/fixtures/dev/api_response.json')
+    # json_file = open('places_api/fixtures/dev/full_api_response.json')
     # response_json = json.load(json_file)
-    # response = PlaceSerializer(response_json,
-    #                            many=True,
+    # response = ApiResponseSerializer(response_json,
     #                            context={'coords': coords})
-    print(url)
     return response.data

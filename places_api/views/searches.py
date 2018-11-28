@@ -6,12 +6,11 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
-from places_api.serializers import SearchesSerializer
+from places_api.serializers import SearchQuerySerializer
 from places_api.utils.gateway import get_info
 
 
-class SearchesViewSet(APIView):
-    serializer_class = SearchesSerializer
+class SearchViewSet(APIView):
     permission_classes = (IsAuthenticated, )
 
     def get(self, request):
@@ -19,7 +18,7 @@ class SearchesViewSet(APIView):
         Get custom method
         """
         # validating the query params
-        search_data = SearchesSerializer(data=self.request.query_params)
+        search_data = SearchQuerySerializer(data=self.request.query_params)
         search_data.is_valid(raise_exception=True)
         # getting the maps info
         response = get_info(search_data.validated_data,
