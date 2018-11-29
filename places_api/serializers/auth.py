@@ -4,12 +4,25 @@ Authentication serializers
 """
 from django.contrib.auth.models import User
 
-from rest_framework import serializers, status
-from rest_framework.exceptions import APIException
+from rest_framework import serializers
 
 from places_api.error_messages import (
     INCLUDE_EMAIL, SHORTER_EMAIL, VALID_EMAIL, SUBMIT_PASSWORD, VALID_PASSWORD,
     EMAIL_IN_USE, UNMATCHING_PASSWORDS)
+
+
+class PasswordsBaseSerializer(serializers.Serializer):
+    password = serializers.CharField(min_length=6, max_length=20,
+                                     style={'input_type': 'password'},
+                                     write_only=True)
+    confirm_password = serializers.CharField(min_length=6, max_length=20,
+                                             style={'input_type': 'password'},
+                                             write_only=True)
+
+    def validate(self, data):
+        if (data['password'] == data['confirm_password']):
+            return data
+        raise serializers.ValidationError(UNMATCHING_PASSWORDS)
 
 
 class SignInSerializer(serializers.Serializer):
@@ -36,17 +49,18 @@ class SignInSerializer(serializers.Serializer):
     )
 
 
-class SignUpSerializer(serializers.ModelSerializer):
+class SignUpSerializer(PasswordsBaseSerializer):
     """
     Sign Up serializer
     """
-    password = serializers.CharField(max_length=30,
-                                     style={'input_type': 'password'},
-                                     write_only=True)
+    first_name = serializers.CharField(max_length=50)
+    email = serializers.EmailField(max_length=50)
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'email', 'password')
+        fields = ('first_name', 'last_name', 'email', 'password',
+                  'confirm_password')
+        extra_kwargs = {'email': {"allow_null": False}}
 
     def validate_email(self, value):
         """
@@ -60,38 +74,22 @@ class SignUpSerializer(serializers.ModelSerializer):
         """
         Create method for SignUp Serializer
         """
-        try:
-            # creating the new user
-            new_user = User(
-                username=validated_data['email'],
-                email=validated_data['email'],
-                first_name=validated_data['first_name'],
-                last_name=validated_data['last_name'],
-                is_active=True)
+        # creating the new user
+        new_user = User(
+            username=validated_data['email'],
+            email=validated_data['email'],
+            first_name=validated_data['first_name'],
+            last_name=validated_data['last_name'],
+            is_active=True)
 
-            new_user.set_password(validated_data['password'])
-            new_user.save()
-            return new_user
-        except Exception as e:
-            raise APIException(
-                e,
-                status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        new_user.set_password(validated_data['password'])
+        new_user.save()
+        return new_user
 
 
-class UpdatePasswordSerializer(serializers.Serializer):
+class UpdatePasswordSerializer(PasswordsBaseSerializer):
     """
     ResetPasswordSerializer class
     """
-    new_password = serializers.CharField(min_length=6, max_length=20,
-                                         style={'input_type': 'password'})
-    confirm_password = serializers.CharField(min_length=6, max_length=20,
-                                             style={'input_type': 'password'})
     current_password = serializers.CharField(min_length=6, max_length=20,
                                              style={'input_type': 'password'})
-
-    def validate_new_password(self, value):
-        if (self.initial_data['new_password'] ==
-                self.initial_data['confirm_password']):
-            return value
-        raise serializers.ValidationError(UNMATCHING_PASSWORDS)

@@ -19,6 +19,7 @@ This a development exercise
 ### Api Docs
 
 * **Docs** - https://app.swaggerhub.com/apis-docs/MisaStrikesBack/Places/beta0.0.1
+* **django app local docs** - https://places-exercise-api.herokuapp.com/docs/
 
 ### Developer
 

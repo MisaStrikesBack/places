@@ -12,6 +12,7 @@ from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
 
+from places_api.error_messages import NOT_CURRENT_PASSWORD
 from places_api.serializers import (SignInSerializer,
                                     SignUpSerializer,
                                     UpdatePasswordSerializer)
@@ -19,7 +20,7 @@ from places_api.serializers import (SignInSerializer,
 
 class SignInView(APIView):
     """
-    SignIn view
+    User log in view
     """
     serializer_class = SignInSerializer
 
@@ -52,7 +53,7 @@ class SignInView(APIView):
 
 class SignOutView(APIView):
     """
-    SignOut view
+    User log out view
     """
     permission_classes = (IsAuthenticated, )
 
@@ -102,11 +103,11 @@ class UpdatePasswordView(APIView):
         if request.user.check_password(
                 serializer.validated_data['current_password']):
             request.user.set_password(
-                serializer.validated_data['new_password'])
+                serializer.validated_data['password'])
             request.user.save()
             return Response(
                 "Password successfully updated", status=status.HTTP_200_OK)
         raise exceptions.APIException(
-            "Please submit the correct current password",
+            NOT_CURRENT_PASSWORD,
             status.HTTP_400_BAD_REQUEST
         )
