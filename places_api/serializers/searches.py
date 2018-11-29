@@ -16,7 +16,7 @@ class SearchQuerySerializer(BaseQuerySerializer):
     """
     keyword = serializers.CharField(max_length=100, required=False)
     radius = serializers.IntegerField(min_value=1, required=False)
-    next_page_token = serializers.CharField(max_length=300, required=False)
+    next_page_token = serializers.CharField(max_length=500, required=False)
 
 
 class SearchResultsSerializer(FavoritesBaseSerializer):
