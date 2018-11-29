@@ -1,0 +1,8 @@
+site_name: Places Api
+nav:
+  - Home: index.md
+  - Auth: auth.md
+  - Search: search.md
+  - Favorites: favorites.md
+  - About: about.md
+theme: readthedocs
