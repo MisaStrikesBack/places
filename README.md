@@ -20,6 +20,7 @@ This a development exercise
 
 * **Docs** - https://app.swaggerhub.com/apis-docs/MisaStrikesBack/Places/beta0.0.1
 * **django app local docs** - https://places-exercise-api.herokuapp.com/docs/
+* **Github docs** -  https://misastrikesback.github.io/places/
 
 ### Developer
 
