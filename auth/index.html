@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Auth - Places Api</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Auth";
+    var mkdocs_page_input_path = "auth.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Places Api</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Auth</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#authentication-services">Authentication Services</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#log-in">Log in</a></li>
+        
+            <li><a class="toctree-l3" href="#log-out">Log out</a></li>
+        
+            <li><a class="toctree-l3" href="#sign-up">Sign up</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../search/">Search</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../favorites.md">Favorites</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Places Api</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Auth</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="authentication-services">Authentication Services</h1>
+<p>This are the authentication endpoints</p>
+<hr />
+<h2 id="log-in">Log in</h2>
+<p>User authentication endpoint<br />
+<strong>POST</strong><br />
+<strong>url</strong> <code>/auth/signin/</code><br />
+<strong>receives</strong> application/json<br />
+<strong>Authentication:</strong>  Not Required</p>
+<h4 id="request-body-parameters">Request Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Extra info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>user email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>user password</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json example</strong>  </p>
+<pre><code>POST /api/auth/signin/
+{
+  &quot;username&quot;: &quot;user@test.com&quot;,
+  &quot;password&quot;: &quot;reallySecurePassword&quot;
+}
+</code></pre>
+
+<h3 id="responses">Responses</h3>
+<h4 id="200-success">200 Success</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>integer</td>
+<td>user id</td>
+</tr>
+<tr>
+<td>user</td>
+<td>string</td>
+<td>user name</td>
+</tr>
+<tr>
+<td>token</td>
+<td>string</td>
+<td>user session token</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong></p>
+<pre><code>HTTP/1.1 200 OK
+{
+  &quot;id&quot;: 1,
+  &quot;user&quot;: &quot;UserOO1&quot;,
+  &quot;token&quot;: &quot;really_cool_session_token&quot;
+}
+</code></pre>
+
+<h4 id="400-bad-request-invalid-email-format-or-empty-credentials">400 Bad Request - Invalid email format or empty credentials</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>password</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 400 Bad Request
+{
+  &quot;email&quot;: [
+    &quot;Please include email&quot;,
+    &quot;Please use a valid email&quot;
+  ],
+  &quot;password&quot;: [
+    &quot;Please submit a valid password&quot;
+  ]
+}
+</code></pre>
+
+<h4 id="401-unauthorized-wrong-credentials">401 Unauthorized - Wrong credentials</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 401 Unauthorized
+{
+  &quot;detail&quot;: &quot;Login failed: Wrong credentials&quot;
+}
+</code></pre>
+
+<hr />
+<h2 id="log-out">Log out</h2>
+<p>User log out endpoint<br />
+<strong>POST</strong><br />
+<strong>url</strong> <code>/auth/signout/</code><br />
+<strong>receives</strong> application/json<br />
+<strong>Authentication:</strong>  Required</p>
+<h4 id="request-body-parameters_1">Request Body Parameters</h4>
+<p><strong>No Request Body required</strong>  </p>
+<p><strong>json example</strong>  </p>
+<pre><code>POST /api/auth/signout/
+</code></pre>
+
+<h3 id="responses_1">Responses</h3>
+<h4 id="200-success_1">200 Success</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>No response body returned</strong>  </p>
+<p><strong>json response</strong></p>
+<pre><code>HTTP/1.1 200 OK
+</code></pre>
+
+<hr />
+<h2 id="sign-up">Sign up</h2>
+<p>User account creation endpoint<br />
+<strong>POST</strong><br />
+<strong>url</strong> <code>/auth/signup/</code><br />
+<strong>receives</strong> application/json<br />
+<strong>Authentication:</strong>  Not Required</p>
+<h4 id="request-body-parameters_2">Request Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Extra info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first_name</td>
+<td>string</td>
+<td>user name</td>
+<td>required</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>string</td>
+<td>user last name</td>
+<td></td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>user email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>user password</td>
+<td>required</td>
+</tr>
+<tr>
+<td>confirm_password</td>
+<td>string</td>
+<td>password confirmation</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json example</strong>  </p>
+<pre><code>  POST /api/auth/signup/
+  {
+    &quot;first_name&quot;: &quot;John&quot;,
+    &quot;last_name&quot;: &quot;Doe&quot;,
+    &quot;email&quot;: &quot;john_doe@test.com&quot;,
+    &quot;password&quot;: &quot;reallySecurePassword&quot;,
+    &quot;confirm_password&quot;: &quot;reallySecurePassword&quot;
+  }
+</code></pre>
+
+<h3 id="responses_2">Responses</h3>
+<h4 id="200-success_2">200 Success</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first_name</td>
+<td>integer</td>
+<td>new user name</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>string</td>
+<td>new user last name</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>new user email</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong></p>
+<pre><code>HTTP/1.1 200 OK
+{
+  &quot;first_name&quot;: &quot;John&quot;,
+  &quot;last_name&quot;: &quot;Doe&quot;,
+  &quot;email&quot;: &quot;john_doe@test.com&quot;
+}
+</code></pre>
+
+<h4 id="400-bad-request-invalid-data">400 Bad Request - Invalid data</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first_name</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>email</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>password</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong></p>
+<pre><code>HTTP/1.1 400 Bad Request
+{
+  &quot;first_name&quot;: [
+    &quot;This field may not be blank.&quot;
+  ],
+  &quot;email&quot;: [
+    &quot;This field may not be blank.&quot;,
+    &quot;The mail is already in use.&quot;,
+    &quot;Enter a valid email address.&quot;
+  ],
+  &quot;password&quot;: [
+    &quot;This field may not be blank.&quot;,
+    &quot;Passwords do not match&quot;
+  ]
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../search/" class="btn btn-neutral float-right" title="Search">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../search/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

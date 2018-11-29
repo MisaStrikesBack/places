@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Search - Places Api</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Search";
+    var mkdocs_page_input_path = "search.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Places Api</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../auth/">Auth</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Search</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#search-places-service">Search places service</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#search">Search</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../favorites.md">Favorites</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Places Api</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Search</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="search-places-service">Search places service</h1>
+<p>This is the api's main service</p>
+<p>This service allows to find places according to a pir of coordinates</p>
+<hr />
+<h2 id="search">Search</h2>
+<p>Search service endpoint<br />
+<strong>GET</strong><br />
+<strong>url</strong> <code>/search/</code><br />
+<strong>receives</strong> application/json<br />
+<strong>Authentication:</strong>  Required</p>
+<h4 id="query-parameters">Query Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+<th>Extra info</th>
+<th>valid values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>search latitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>search longitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>keyword</td>
+<td>search keyword</td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td>order</td>
+<td>search order value</td>
+<td></td>
+<td>'distance'</td>
+</tr>
+<tr>
+<td>next_page_token</td>
+<td>pagination token</td>
+<td>is a really long string</td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>request examples</strong>  </p>
+<pre><code>GET /api/search/?lat=19.8719294&amp;long=-99.1367931
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;keyword=comida
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=distance
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=distance&amp;keyword=tacos
+
+</code></pre>
+
+<h3 id="responses">Responses</h3>
+<h4 id="200-success">200 Success</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Extra Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>next_page_token</td>
+<td>string</td>
+<td>pagination token</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>places</td>
+<td>objects list</td>
+<td>list of returned places</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Places fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>api_id</td>
+<td>string</td>
+<td>place map id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>place name</td>
+</tr>
+<tr>
+<td>place_id</td>
+<td>string</td>
+<td>place id</td>
+</tr>
+<tr>
+<td>rating</td>
+<td>decimal</td>
+<td>place rating</td>
+</tr>
+<tr>
+<td>vicinity</td>
+<td>string</td>
+<td>place address string</td>
+</tr>
+<tr>
+<td>lat</td>
+<td>decimal</td>
+<td>place latitude</td>
+</tr>
+<tr>
+<td>long</td>
+<td>decimal</td>
+<td>place longitude</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>decimal</td>
+<td>distance in meters between the place and the request lat and long</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong></p>
+<pre><code>HTTP/1.1 200 OK
+{
+  &quot;next_page_token&quot;: &quot;CrQCKgEAA...BEZo6cWvu75Zc&quot;,
+  &quot;places&quot;: [
+      {
+          &quot;api_id&quot;: &quot;77cbfa939e1865ff49880765f853b8df69b0b59f&quot;,
+          &quot;name&quot;: &quot;Centennial ballrooms&quot;,
+          &quot;place_id&quot;: &quot;ChIJ-UlR64H40YURYL3t4Rca1gw&quot;,
+          &quot;rating&quot;: &quot;4.1&quot;,
+          &quot;vicinity&quot;: &quot;Centenario 367, Nextengo, Ciudad de México&quot;,
+          &quot;lat&quot;: &quot;19.4730008&quot;,
+          &quot;long&quot;: &quot;-99.1885226&quot;,
+          &quot;distance&quot;: 876.39256601346
+      },
+      {
+          &quot;api_id&quot;: &quot;5921d83485fbce6c2d04445d65a048b399dc6806&quot;,
+          &quot;name&quot;: &quot;Bicentennial Park Skatepark&quot;,
+          &quot;place_id&quot;: &quot;ChIJR2Yx83kC0oURs3kgnNCL91s&quot;,
+          &quot;rating&quot;: &quot;4.6&quot;,
+          &quot;vicinity&quot;: &quot;Av. 5 de Mayo 290, San Lorenzo Tlaltenango, Miguel Hidalgo&quot;,
+          &quot;lat&quot;: &quot;19.4670980&quot;,
+          &quot;long&quot;: &quot;-99.1949826&quot;,
+          &quot;distance&quot;: 567.6020735119857
+      },
+      {
+          &quot;api_id&quot;: &quot;5308550773d180024315638162a2009619ff069d&quot;,
+          &quot;name&quot;: &quot;Seca&quot;,
+          &quot;place_id&quot;: &quot;ChIJFyytPlv40YUR-OsLx-bsnLs&quot;,
+          &quot;rating&quot;: &quot;4.9&quot;,
+          &quot;vicinity&quot;: &quot;Centeotl 223-A, San Antonio, Azcapotzalco&quot;,
+          &quot;lat&quot;: &quot;19.4775198&quot;,
+          &quot;long&quot;: &quot;-99.1963905&quot;,
+          &quot;distance&quot;: 620.2868702074812
+      },
+      ...
+      {
+          &quot;api_id&quot;: &quot;8f6a9f9be6cf7c5c8d347de045ce6e577f7dc7ff&quot;,
+          &quot;name&quot;: &quot;Walmart Azcapotzalco&quot;,
+          &quot;place_id&quot;: &quot;ChIJO0lU038C0oUR260PKftz2r8&quot;,
+          &quot;rating&quot;: &quot;4.0&quot;,
+          &quot;vicinity&quot;: &quot;Calle Camino a Nextengo 78, Santa Cruz Acayucan, Ciudad de México&quot;,
+          &quot;lat&quot;: &quot;19.4728407&quot;,
+          &quot;long&quot;: &quot;-99.1925539&quot;,
+          &quot;distance&quot;: 456.36835393052377
+      }
+  ]
+}
+</code></pre>
+
+<h4 id="401-unauthorized">401 Unauthorized</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 401 Unauthorized
+{
+  &quot;detail&quot;: &quot;Authentication credentials were not provided.&quot;
+}
+</code></pre>
+
+<h4 id="400-bad-request">400 Bad Request</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>long</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 404 Bad Request
+{
+    &quot;lat&quot;: [
+        &quot;This field is required.&quot;,
+        &quot;A valid number is required.&quot;
+    ],
+    &quot;long&quot;: [
+        &quot;This field is required.&quot;,
+        &quot;A valid number is required.&quot;
+    ]
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../auth/" class="btn btn-neutral" title="Auth"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../auth/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="main.js" defer></script>
+
+</body>
+</html>
