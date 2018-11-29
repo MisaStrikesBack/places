@@ -4,6 +4,7 @@ This a development exercise
 
 ## Contents
 * [Staging](#staging)
+* [Api Docs](#api-docs)
 * [Project setup](#project-setup)
 * [Running development stack](#running-the-development-stack)
 * [Halting development stack](#halting-development-stack)
@@ -14,6 +15,10 @@ This a development exercise
 ### Staging
 
 * **Heroku** - https://places-exercise-api.herokuapp.com/
+
+### Api Docs
+
+* **Docs** - https://app.swaggerhub.com/apis-docs/MisaStrikesBack/Places/beta0.0.1
 
 ### Developer
 
