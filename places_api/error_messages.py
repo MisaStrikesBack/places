@@ -25,7 +25,9 @@ EMAIL_IN_USE = "The mail is already in use"
 
 INVALID_GROUP = "Group does not exist"
 
-UNMATCHING_PASSWORDS = "Passwords does not match"
+UNMATCHING_PASSWORDS = "Passwords do not match"
+
+NOT_CURRENT_PASSWORD = "Please submit the correct current password"
 
 INVALID_BED_TYPE_ID = "Invalid bed type id in array"
 
