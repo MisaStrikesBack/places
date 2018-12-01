@@ -1,0 +1,174 @@
+{
+  "places": [
+    {
+      "api_id": "9a621f55464a48c280167cb7327e94497b77107d",
+      "name": "COCINA LA TIA Y TACOS EL DON",
+      "place_id": "ChIJd0RIl4L40YURUpbxD1RuCPc",
+      "rating": "4.7",
+      "vicinity": "Calle Otoño #14, Ángel Zimbrón, Ciudad de México",
+      "lat": "19.4676760",
+      "long": "-99.1891050",
+      "distance": 934.4829337843819
+    },
+    {
+      "api_id": "c014f74347d166d187df15f4c4db3389c9535ea5",
+      "name": "Tacos Lopez",
+      "place_id": "ChIJGTeWJ4AC0oURs2Gx9x8ORwA",
+      "rating": "4.2",
+      "vicinity": "Av. F.F.C.C. Nacionales, San Miguel Amantla, Ciudad de México",
+      "lat": "19.4797757",
+      "long": "-99.1899873",
+      "distance": 1124.7092158449327
+    },
+    {
+      "api_id": "d52386702919f05027a5df6a3d1852c56bee9284",
+      "name": "El Tacos Taco",
+      "place_id": "ChIJi4ln33740YURN-dcUwiHr6g",
+      "rating": "5.0",
+      "vicinity": "Esperanza L-B, Centro de Azcapotzalco, Azcapotzalco",
+      "lat": "19.4825523",
+      "long": "-99.1871180",
+      "distance": 1553.9007486950377
+    },
+    {
+      "api_id": "614911dad969b167994da6b61de0859e07dc5576",
+      "name": "Tacos y Carnitas El Paisa Jr",
+      "place_id": "ChIJFyoWqX0C0oURObasNZIgXJI",
+      "rating": "5.0",
+      "vicinity": "Camino a Santa Lucía 73, Plenitud, Ciudad de México",
+      "lat": "19.4748321",
+      "long": "-99.1979530",
+      "distance": 343.6250576797227
+    },
+    {
+      "api_id": "1532394b3ec5d4314b00b5c5ebf5c65a46375fb8",
+      "name": "Tacos Lopez",
+      "place_id": "ChIJS0MLsH0C0oURmVftdY8vtBo",
+      "rating": "0.0",
+      "vicinity": "Camino a Santa Lucía, Plenitud, Ciudad de México",
+      "lat": "19.4750736",
+      "long": "-99.1974127",
+      "distance": 354.08298213582174
+    },
+    {
+      "api_id": "879089d2b81ccd753a532fe2d61955bcbaaadd7b",
+      "name": "Tacos Richard",
+      "place_id": "ChIJMVEyxYoC0oURgcTw6n8rfHg",
+      "rating": "4.7",
+      "vicinity": "Calle Camino a Nextengo 102, Santa Cruz Acayucan, Ciudad de México",
+      "lat": "19.4746173",
+      "long": "-99.1949963",
+      "distance": 352.30755741167405
+    },
+    {
+      "api_id": "bd19ec7325f2260993efc8f09653f6e0ed1c9630",
+      "name": "Tacos chamaquillo",
+      "place_id": "ChIJC5WWB30C0oURuU31e_mn7eg",
+      "rating": "4.7",
+      "vicinity": "Av.camino Santa lucia, Santa lucia, Azcapotzalco",
+      "lat": "19.4749380",
+      "long": "-99.1982830",
+      "distance": 367.9513230911856
+    },
+    {
+      "api_id": "126bc950e5174f8b19f698ae751e110d6d175307",
+      "name": "Tacos La Abuela",
+      "place_id": "ChIJBQ9i-34C0oURUxz13I-l5IE",
+      "rating": "3.8",
+      "vicinity": "Calle Camino a Nextengo 137, Azcapotzalco, Ciudad de México",
+      "lat": "19.4740344",
+      "long": "-99.1926167",
+      "distance": 496.5542747427942
+    },
+    {
+      "api_id": "18afc3978e8486df692ed0f3d3ae1aacc64c7d65",
+      "name": "Tacos De Canasta Canastitakos",
+      "place_id": "ChIJJTVvPYP40YURYmHZJYzITrg",
+      "rating": "5.0",
+      "vicinity": "Calle Nilo 29, Claveria, Ciudad de México",
+      "lat": "19.4675107",
+      "long": "-99.1863358",
+      "distance": 1201.972771895909
+    },
+    {
+      "api_id": "913c938e381f2fc8fd054f5f0678e08fb59e3e55",
+      "name": "TACOS Y CARNITAS RAFA",
+      "place_id": "ChIJy4RwCoAC0oURPpZLtb8fufY",
+      "rating": "5.0",
+      "vicinity": "Tochtli 127, Santa Cruz Acayucan, Ciudad de México",
+      "lat": "19.4776667",
+      "long": "-99.1910716",
+      "distance": 874.1850849165871
+    },
+    {
+      "api_id": "029fdacaa2ec99d56c5a67f5c322fea362d5fb93",
+      "name": "Tacos Chamaquillo",
+      "place_id": "ChIJOTyxB30C0oURzq66te8Mo5g",
+      "rating": "4.5",
+      "vicinity": "Camino a Santa Lucía 300, Sta Lucia, Ciudad de México",
+      "lat": "19.4749346",
+      "long": "-99.1983567",
+      "distance": 370.96937458872367
+    },
+    {
+      "api_id": "a14cf0daf8199bc10b28ae8bd9988ab2b3ae2280",
+      "name": "Los Tacos De Pepe",
+      "place_id": "ChIJbS0fR3740YUR9YaIL0WpqpU",
+      "rating": "4.5",
+      "vicinity": "18, Pro Hogar, Ciudad de México",
+      "lat": "19.4795034",
+      "long": "-99.1861473",
+      "distance": 1397.2102258045256
+    },
+    {
+      "api_id": "a33c6d05959fdabec1ddb598d2fee2efb302c594",
+      "name": "Tacos Y Burritas \"Chaparrito\"",
+      "place_id": "ChIJHbidB4H40YURwKdhuBp5p8E",
+      "rating": "3.8",
+      "vicinity": "Aquiles Elorduy 431, Col del Recreo, Ciudad de México",
+      "lat": "19.4743306",
+      "long": "-99.1870771",
+      "distance": 1054.1534230219468
+    },
+    {
+      "api_id": "2818111e441b478146a301f2c8a7e92d16f194f0",
+      "name": "Tacos Lucas",
+      "place_id": "ChIJF8ibuYL40YURP2oUYB55pec",
+      "rating": "4.0",
+      "vicinity": "José F. Gutiérrez 199, Ángel Zimbrón, Azcapotzalco",
+      "lat": "19.4667839",
+      "long": "-99.1885706",
+      "distance": 1034.2814291220698
+    },
+    {
+      "api_id": "b2a9f692ecbf65cf6dc6fd8aad7bfe7e0bc0fcf2",
+      "name": "Tacos El Neto",
+      "place_id": "ChIJ5wttf4EC0oURUkbv58qmPYE",
+      "rating": "4.4",
+      "vicinity": "cerca de 532, Av. F.F.C.C. Nacionales, San Francisco Tetecala, Ciudad de México",
+      "lat": "19.4815142",
+      "long": "-99.1899773",
+      "distance": 1279.7703190421266
+    },
+    {
+      "api_id": "523be37ccdd5bfa6fb56ca4f69105099f8c127d7",
+      "name": "Los Parados De Don Pepe",
+      "place_id": "ChIJ_fIqR3740YURtM4VfpQT8HY",
+      "rating": "4.5",
+      "vicinity": "Miguel Lerdo de Tejada 18, Centro de Azcapotzalco, Ciudad de México",
+      "lat": "19.4795385",
+      "long": "-99.1861068",
+      "distance": 1402.9432354811559
+    },
+    {
+      "api_id": "402a3ccb0c654d645e2db830f95c1c0fefe00353",
+      "name": "Tacos Luigui",
+      "place_id": "ChIJn6upN3wC0oURiFTwmwN-DJc",
+      "rating": "0.0",
+      "vicinity": "Nte. 135-A 87, Plenitud, Ciudad de México",
+      "lat": "19.4736931",
+      "long": "-99.1966705",
+      "distance": 195.66153481906608
+    }
+  ]
+}

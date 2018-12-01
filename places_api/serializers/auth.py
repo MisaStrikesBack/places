@@ -54,6 +54,7 @@ class SignUpSerializer(PasswordsBaseSerializer):
     Sign Up serializer
     """
     first_name = serializers.CharField(max_length=50)
+    last_name = serializers.CharField(max_length=50, required=False)
     email = serializers.EmailField(max_length=50)
 
     class Meta:
@@ -74,15 +75,15 @@ class SignUpSerializer(PasswordsBaseSerializer):
         """
         Create method for SignUp Serializer
         """
+        # popping the password values
+        password = validated_data.pop('password')
+        validated_data.pop('confirm_password')
+        # adding the email as username
+        validated_data['username'] = validated_data['email']
         # creating the new user
-        new_user = User(
-            username=validated_data['email'],
-            email=validated_data['email'],
-            first_name=validated_data['first_name'],
-            last_name=validated_data['last_name'],
-            is_active=True)
+        new_user = User(**validated_data, is_active=True)
 
-        new_user.set_password(validated_data['password'])
+        new_user.set_password(password)
         new_user.save()
         return new_user
 
