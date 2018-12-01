@@ -3,9 +3,10 @@
 External api consumption file
 """
 import requests
-# import json
+import json
+from django.utils.safestring import mark_safe
 
-from django.core.cache import cache
+# from django.core.cache import cache
 
 from places_api.constants import API_REQUEST
 from places_api.serializers import ApiResponseSerializer
@@ -43,18 +44,21 @@ def get_info(data, coords):
     # setting ordering
     url = set_keyword(url, data)
     # checking if the data is
-    if cache.get('url') == url:
-        print('old query')
-        response = cache.get('response')
-    else:
-        print('cached')
-        # setting the
-        cache.set('url', url)
-        response = ApiResponseSerializer(requests.get(url).json(),
-                                         context={'coords': coords})
-        cache.set('response', response)
+    # if cache.get('url') == url:
+    #     print('old query')
+    #     response = cache.get('response')
+    # else:
+    #     print('cached')
+    #     # setting the
+    #     cache.set('url', url)
+    aux = requests.get(url)
+    print(mark_safe(json.loads(aux.content)))
+    response = ApiResponseSerializer(aux.json(),
+                                     context={'coords': coords})
+    # cache.set('response', response)
     # json_file = open('places_api/fixtures/dev/full_api_response.json')
     # response_json = json.load(json_file)
     # response = ApiResponseSerializer(response_json,
     #                            context={'coords': coords})
+    print(url)
     return response.data

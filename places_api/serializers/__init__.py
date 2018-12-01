@@ -4,4 +4,4 @@ from .favorites import (
     FavoritesQuerySerializer)
 from .searches import (
     SearchQuerySerializer, ApiResponseSerializer, BaseQuerySerializer)
-from .base_query import BaseQuerySerializer
+from .base_query import BaseQuerySerializer, LatLngSerializer

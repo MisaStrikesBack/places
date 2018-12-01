@@ -14,7 +14,6 @@ ORDER_VALUES = {
     'better': '-rating',
     'worst': 'rating'}
 
-
 DISTANCE_VALUES = {
     'near': False,
     'far': True}
