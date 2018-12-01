@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Favorites - Places Api</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Favorites";
+    var mkdocs_page_input_path = "favorites.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Places Api</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../auth/">Auth</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../search/">Search</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Favorites</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#favorites-places-service">Favorites places service</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#list">List</a></li>
+        
+            <li><a class="toctree-l3" href="#detail">Detail</a></li>
+        
+            <li><a class="toctree-l3" href="#create">Create</a></li>
+        
+            <li><a class="toctree-l3" href="#delete">Delete</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Places Api</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Favorites</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="favorites-places-service">Favorites places service</h1>
+<p>This service saves a selected place in the users favorites section  </p>
+<hr />
+<h2 id="list">List</h2>
+<p>Favorites list endpoint  </p>
+<p><strong>GET</strong><br />
+<strong>url</strong> <code>/favorites/</code><br />
+<strong>receives:</strong> application/json<br />
+<strong>Authentication:</strong>  Required<br />
+<strong>Pagination size:</strong> 10 objects  </p>
+<h4 id="query-parameters">Query Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+<th>Extra info</th>
+<th>valid values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>search latitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>search longitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>order</td>
+<td>search order value</td>
+<td></td>
+<td>'newer'<br>'older'<br>'better'<br>'worst'<br>'near'<br>'far'</td>
+</tr>
+</tbody>
+</table>
+<p><strong>request examples</strong>  </p>
+<pre><code>GET /api/search/?lat=19.8719294&amp;long=-99.1367931
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=newer
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=older
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=better
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=worst
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=near
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=far
+</code></pre>
+
+<h3 id="responses">Responses</h3>
+<h4 id="200-success">200 Success</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td>integer</td>
+<td>total favorites number</td>
+</tr>
+<tr>
+<td>next</td>
+<td>string</td>
+<td>next page pagination link</td>
+</tr>
+<tr>
+<td>previous</td>
+<td>string</td>
+<td>previous page pagination link</td>
+</tr>
+<tr>
+<td>results</td>
+<td>objects list</td>
+<td>list of favorites</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Favorites fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>api_id</td>
+<td>string</td>
+<td>favorite map id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>favorite name</td>
+</tr>
+<tr>
+<td>place_id</td>
+<td>string</td>
+<td>favorite id</td>
+</tr>
+<tr>
+<td>rating</td>
+<td>decimal</td>
+<td>favorite rating</td>
+</tr>
+<tr>
+<td>vicinity</td>
+<td>string</td>
+<td>favorite address string</td>
+</tr>
+<tr>
+<td>lat</td>
+<td>decimal</td>
+<td>favorite latitude</td>
+</tr>
+<tr>
+<td>long</td>
+<td>decimal</td>
+<td>favorite longitude</td>
+</tr>
+<tr>
+<td>creation_date</td>
+<td>datetime</td>
+<td>favorite creation date</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>decimal</td>
+<td>distance in meters between the favorite and the request lat and long</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>{
+  &quot;count&quot;: 4,
+  &quot;next&quot;: &quot;http://localhost:8000/api/favorites/?lat=19.4719294&amp;limit=2&amp;long=-99.1967931&amp;offset=2&quot;,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;pk&quot;: 8,
+      &quot;api_id&quot;: &quot;77cbfa939e1865ff49880765f853b8df69b0b59f&quot;,
+      &quot;name&quot;: &quot;Centennial ballrooms&quot;,
+      &quot;place_id&quot;: &quot;ChIJ-UlR64H40YURYL3t4Rca1gw&quot;,
+      &quot;rating&quot;: &quot;2.4&quot;,
+      &quot;vicinity&quot;: &quot;Centenario 367, Nextengo, Ciudad de México&quot;,
+      &quot;lat&quot;: &quot;19.4716780&quot;,
+      &quot;long&quot;: &quot;-99.1940690&quot;,
+      &quot;creation_date&quot;: &quot;2018-11-28T11:13:04.153706Z&quot;,
+      &quot;distance&quot;: 287.35864780538105
+    },
+    {
+      &quot;pk&quot;: 7,
+      &quot;api_id&quot;: &quot;8f6a9f9be6cf7c5c8d347de045ce6e577f7dc7ff&quot;,
+      &quot;name&quot;: &quot;Walmart Azcapotzalco&quot;,
+      &quot;place_id&quot;: &quot;ChIJO0lU038C0oUR260PKftz2r8&quot;,
+      &quot;rating&quot;: &quot;3.2&quot;,
+      &quot;vicinity&quot;: &quot;Calle Camino a Nextengo 78, Santa Cruz Acayucan, Ciudad de México&quot;,
+      &quot;lat&quot;: &quot;19.4983580&quot;,
+      &quot;long&quot;: &quot;-99.2921490&quot;,
+      &quot;creation_date&quot;: &quot;2018-11-28T11:11:08.327673Z&quot;,
+      &quot;distance&quot;: 10429.495177022078
+    }
+  ]
+}
+</code></pre>
+
+<h4 id="401-unauthorized">401 Unauthorized</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 401 Unauthorized
+{
+  &quot;detail&quot;: &quot;Authentication credentials were not provided.&quot;
+}
+</code></pre>
+
+<h4 id="400-bad-request">400 Bad Request</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>long</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 404 Bad Request
+{
+  &quot;lat&quot;: [
+    &quot;This query param is required&quot;,
+    &quot;A valid number is required.&quot;
+  ],
+  &quot;long&quot;: [
+    &quot;This query param is required&quot;,
+    &quot;A valid number is required.&quot;
+  ]
+}
+</code></pre>
+
+<hr />
+<h2 id="detail">Detail</h2>
+<p>Favorite detail service endpoint  </p>
+<p><strong>GET</strong><br />
+<strong>url</strong> <code>/favorites/{id}/</code>
+<strong>receives</strong> application/json<br />
+<strong>Authentication:</strong>  Required  </p>
+<h4 id="query-parameters_1">Query Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+<th>Extra info</th>
+<th>valid values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>search latitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>search longitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>request examples</strong>  </p>
+<pre><code>GET
+/api/favorites/{id}/?lat=19.4719294&amp;long=-99.1967931
+</code></pre>
+
+<h3 id="responses_1">Responses</h3>
+<h4 id="200-success_1">200 Success</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>api_id</td>
+<td>string</td>
+<td>favorite map id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>favorite name</td>
+</tr>
+<tr>
+<td>place_id</td>
+<td>string</td>
+<td>favorite id</td>
+</tr>
+<tr>
+<td>rating</td>
+<td>decimal</td>
+<td>favorite rating</td>
+</tr>
+<tr>
+<td>vicinity</td>
+<td>string</td>
+<td>favorite address string</td>
+</tr>
+<tr>
+<td>lat</td>
+<td>decimal</td>
+<td>favorite latitude</td>
+</tr>
+<tr>
+<td>long</td>
+<td>decimal</td>
+<td>favorite longitude</td>
+</tr>
+<tr>
+<td>creation_date</td>
+<td>datetime</td>
+<td>favorite creation date</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>decimal</td>
+<td>distance in meters between the favorite and the request lat and long</td>
+</tr>
+</tbody>
+</table>
+<h4 id="401-unauthorized_1">401 Unauthorized</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 401 Unauthorized
+{
+  &quot;detail&quot;: &quot;Authentication credentials were not provided.&quot;
+}
+</code></pre>
+
+<h4 id="400-bad-request_1">400 Bad Request</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>long</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 404 Bad Request
+{
+  &quot;lat&quot;: [
+    &quot;This query param is required&quot;,
+    &quot;A valid number is required.&quot;
+  ],
+  &quot;long&quot;: [
+    &quot;This query param is required&quot;,
+    &quot;A valid number is required.&quot;
+  ]
+}
+</code></pre>
+
+<h4 id="404-not-found">404 Not Found</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>{
+  &quot;detail&quot;: &quot;Not found.&quot;
+}
+</code></pre>
+
+<hr />
+<h2 id="create">Create</h2>
+<p>Favorite creation service endpoint  </p>
+<p><strong>POST</strong><br />
+<strong>url</strong> <code>/favorites/</code><br />
+<strong>receives:</strong> application/json<br />
+<strong>Authentication:</strong>  Required  </p>
+<h4 id="query-parameters_2">Query Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Description</th>
+<th>Extra info</th>
+<th>valid values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>search latitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>search longitude</td>
+<td>required</td>
+<td>integer</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-body-parameters">Request Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Extra info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>api_id</td>
+<td>string</td>
+<td>favorite map id</td>
+<td>required</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>favorite name</td>
+<td>required</td>
+</tr>
+<tr>
+<td>place_id</td>
+<td>string</td>
+<td>favorite id</td>
+<td>required</td>
+</tr>
+<tr>
+<td>rating</td>
+<td>decimal</td>
+<td>favorite rating</td>
+<td></td>
+</tr>
+<tr>
+<td>vicinity</td>
+<td>string</td>
+<td>favorite address string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>lat</td>
+<td>decimal</td>
+<td>favorite latitude</td>
+<td>required</td>
+</tr>
+<tr>
+<td>long</td>
+<td>decimal</td>
+<td>favorite longitude</td>
+<td>required</td>
+</tr>
+<tr>
+<td>user_id</td>
+<td>integer</td>
+<td>creator user id</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json example</strong>  </p>
+<pre><code>POST /api/favorites/?lat=19.4719294&amp;long=-99.1967931
+{
+  &quot;api_id&quot;: &quot;8f6a9f9be6cf7c5c8d347de045ce6e577f7dc7ff&quot;,
+  &quot;name&quot;: &quot;Walmart Azcapotzalco&quot;,
+  &quot;place_id&quot;: &quot;ChIJO0lU038C0oUR260PKftz2r8&quot;,
+  &quot;rating&quot;: &quot;3.2&quot;,
+  &quot;vicinity&quot;: &quot;Calle Camino a Nextengo 78, CDMX&quot;,
+  &quot;lat&quot;: &quot;19.4983580&quot;,
+  &quot;long&quot;: &quot;-99.2921490&quot;,
+  &quot;user_id&quot;: 2,
+}
+</code></pre>
+
+<h3 id="responses_2">Responses</h3>
+<h4 id="200-success_2">200 Success</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pk</td>
+<td>integer</td>
+<td>created object pk</td>
+</tr>
+<tr>
+<td>api_id</td>
+<td>string</td>
+<td>favorite map id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>favorite name</td>
+</tr>
+<tr>
+<td>place_id</td>
+<td>string</td>
+<td>favorite id</td>
+</tr>
+<tr>
+<td>rating</td>
+<td>decimal</td>
+<td>favorite rating</td>
+</tr>
+<tr>
+<td>vicinity</td>
+<td>string</td>
+<td>favorite address string</td>
+</tr>
+<tr>
+<td>lat</td>
+<td>decimal</td>
+<td>favorite latitude</td>
+</tr>
+<tr>
+<td>long</td>
+<td>decimal</td>
+<td>favorite longitude</td>
+</tr>
+<tr>
+<td>creation_date</td>
+<td>datetime</td>
+<td>favorite creation date</td>
+</tr>
+<tr>
+<td>distance</td>
+<td>decimal</td>
+<td>distance in meters between the favorite and the request lat and long</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong></p>
+<pre><code>HTTP/1.1 201 Created
+{
+  &quot;pk&quot;: 16,
+  &quot;api_id&quot;: &quot;wertrey&quot;,
+  &quot;name&quot;: &quot;asdf&quot;,
+  &quot;place_id&quot;: &quot;qw3rerth&quot;,
+  &quot;rating&quot;: &quot;2.5&quot;,
+  &quot;vicinity&quot;: &quot;dsfg sdfg sdfg&quot;,
+  &quot;lat&quot;: &quot;19.4983580&quot;,
+  &quot;long&quot;: &quot;-99.2921490&quot;,
+  &quot;creation_date&quot;: &quot;2018-12-01T09:01:06.782651Z&quot;,
+  &quot;distance&quot;: 10429.495177022078
+}
+</code></pre>
+
+<h4 id="401-unauthorized_2">401 Unauthorized</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 401 Unauthorized
+{
+  &quot;detail&quot;: &quot;Authentication credentials were not provided.&quot;
+}
+</code></pre>
+
+<h4 id="400-bad-request_2">400 Bad Request</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lat</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>long</td>
+<td>error message</td>
+</tr>
+<tr>
+<td>non_field_errors</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 400 Bad Request
+{
+  &quot;lat&quot;: [
+    &quot;This query param is required&quot;,
+    &quot;A valid number is required.&quot;
+  ],
+  &quot;long&quot;: [
+    &quot;This query param is required&quot;,
+    &quot;A valid number is required.&quot;
+  ],
+  &quot;non_field_errors&quot;: [
+    &quot;The fields api_id, user must make a unique set.&quot;
+  ]
+}
+</code></pre>
+
+<hr />
+<h2 id="delete">Delete</h2>
+<p>Favorite deletion service endpoint  </p>
+<p><strong>DELETE</strong><br />
+<strong>url</strong> <code>/favorites/{id}/</code><br />
+<strong>receives:</strong> application/json<br />
+<strong>Authentication:</strong>  Required  </p>
+<h4 id="query-parameters_3">Query Parameters</h4>
+<ul>
+<li>No query parameters required</li>
+</ul>
+<h4 id="request-body-parameters_1">Request Body Parameters</h4>
+<ul>
+<li>No request body required</li>
+</ul>
+<p><strong>json example</strong>  </p>
+<pre><code>DELETE /api/favorites/{id}/
+</code></pre>
+
+<h3 id="responses_3">Responses</h3>
+<h4 id="204-no-content">204 No Content</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong><br />
+No body returned</p>
+<h4 id="401-unauthorized_3">401 Unauthorized</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>HTTP/1.1 401 Unauthorized
+{
+  &quot;detail&quot;: &quot;Authentication credentials were not provided.&quot;
+}
+</code></pre>
+
+<h4 id="404-not-found_1">404 Not Found</h4>
+<p><strong>returns:</strong> application/json<br />
+<strong>Response fields</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detail</td>
+<td>error message</td>
+</tr>
+</tbody>
+</table>
+<p><strong>json response</strong>  </p>
+<pre><code>{
+  &quot;detail&quot;: &quot;Not found.&quot;
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../search/" class="btn btn-neutral" title="Search"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../search/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
