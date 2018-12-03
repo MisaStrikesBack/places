@@ -5,6 +5,7 @@ favorites serializers
 from rest_framework import serializers
 
 from places_api.models import Favorite
+from places_api.error_messages import INVALID_USER
 from places_api.serializers.base_query import BaseQuerySerializer
 
 
@@ -40,6 +41,15 @@ class FavoritesModelSerializer(FavoritesBaseSerializer):
                                                         'creation_date',
                                                         'distance']
         extra_kwargs = {'user': {"write_only": True}}
+
+    def validate_user(self, value):
+        """
+        Validating the user id because a user can only create favorites for
+        himself
+        """
+        if value.id != self.context['request'].user.id:
+            raise serializers.ValidationError(INVALID_USER)
+        return value
 
     def get_distance(self, obj):
         """
