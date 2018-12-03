@@ -4,6 +4,8 @@ Searches serializers
 """
 from geopy import distance
 
+from django.core.cache import cache
+
 from rest_framework import serializers
 
 from places_api.serializers import FavoritesBaseSerializer
@@ -16,7 +18,15 @@ class SearchQuerySerializer(BaseQuerySerializer):
     """
     keyword = serializers.CharField(max_length=100, required=False)
     radius = serializers.IntegerField(min_value=1, required=False)
-    next_page_token = serializers.CharField(max_length=500, required=False)
+    next_page = serializers.CharField(required=False)
+    page = serializers.IntegerField(required=False)
+
+    def validate_page(self, value):
+        print('page')
+        if not 0 <= value <= cache.get('pages'):
+            print('se valido')
+            return 1
+        return value
 
 
 class SearchResultsSerializer(FavoritesBaseSerializer):
@@ -48,6 +58,20 @@ class ApiResponseSerializer(serializers.Serializer):
     """
     Google api response serializer
     """
-    next_page_token = serializers.CharField(max_length=300, required=False)
+    next_page_token = serializers.CharField(required=False)
+    total_pages = serializers.SerializerMethodField()
+    current_page = serializers.SerializerMethodField()
     places = SearchResultsSerializer(source='results', many=True,
                                      read_only=True)
+
+    def get_total_pages(self, object):
+        """
+        return the max number of pagination
+        """
+        return self.context['total_pages']
+
+    def get_current_page(self, object):
+        """
+        returns the current page
+        """
+        return self.context['current_page']

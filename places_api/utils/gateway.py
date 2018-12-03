@@ -3,10 +3,8 @@
 External api consumption file
 """
 import requests
-import json
-from django.utils.safestring import mark_safe
 
-# from django.core.cache import cache
+from django.core.cache import cache
 
 from places_api.constants import API_REQUEST
 from places_api.serializers import ApiResponseSerializer
@@ -37,28 +35,47 @@ def set_keyword(url, data):
 def get_info(data, coords):
     # setting the base url
     url = "{0}location={1},{2}&".format(API_REQUEST, data['lat'], data['long'])
-    # if data.get('next_page_token'):
-    #     print(len(data['next_page_token']))
     # setting order
     url = set_order(url, data)
     # setting ordering
     url = set_keyword(url, data)
-    # checking if the data is
-    # if cache.get('url') == url:
-    #     print('old query')
-    #     response = cache.get('response')
-    # else:
-    #     print('cached')
-    #     # setting the
-    #     cache.set('url', url)
-    aux = requests.get(url)
-    print(mark_safe(json.loads(aux.content)))
-    response = ApiResponseSerializer(aux.json(),
-                                     context={'coords': coords})
-    # cache.set('response', response)
-    # json_file = open('places_api/fixtures/dev/full_api_response.json')
-    # response_json = json.load(json_file)
-    # response = ApiResponseSerializer(response_json,
-    #                            context={'coords': coords})
-    print(url)
-    return response.data
+    page_index = data['page'] if data.get('page') else 1
+    if url != cache.get('url'):
+        print('new url')
+        # clearing cache to flush all possible pages
+        cache.clear()
+        # set new url
+        cache.set('url', url)
+        # getting new response
+        response = requests.get(url)
+        # setting the first page, the pages number, and the used tokens list
+        cache.set('page_1', response)
+        cache.set('pages', 1)
+        cache.set('tokens', [])
+    # checking if next_page token and nex_page token not repeated
+    elif (data.get('next_page') and
+            data['next_page'] not in cache.get('tokens')):
+        print('add page')
+        # setting the pagination url
+        token_url = '{0}pagetoken={1}'.format(url, data['next_page'])
+        # requseting new page
+        response = requests.get(token_url)
+        # assesing request response
+        if response and response.json()['status'] == 'OK':
+            # storing the token string
+            cache.set('tokens', cache.get('tokens') + [data['next_page']])
+            # updating the number of pages
+            page_index = cache.get('pages') + 1
+            # storing the new page in cache
+            cache.set("page_{0}".format(page_index),
+                      response)
+            # storing new number of pages in cache
+            cache.set('pages', page_index)
+
+    api_response = ApiResponseSerializer(
+        cache.get("page_{0}".format(page_index)).json(),
+        context={
+          'coords': coords,
+          'total_pages': cache.get('pages'),
+          'current_page': page_index})
+    return api_response.data
