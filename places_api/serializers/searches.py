@@ -22,9 +22,7 @@ class SearchQuerySerializer(BaseQuerySerializer):
     page = serializers.IntegerField(required=False)
 
     def validate_page(self, value):
-        print('page')
         if not 0 <= value <= cache.get('pages'):
-            print('se valido')
             return 1
         return value
 
