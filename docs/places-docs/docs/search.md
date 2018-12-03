@@ -18,7 +18,8 @@ Search service endpoint
 |long     |search longitude|required   |integer     |
 |keyword  |search keyword  |           |string      |
 |order   |search order value  |           |'distance'  |
-|next_page_token   |pagination token  |is a really long string|string |
+|next_page   |pass next_page_token to request next page ||string |
+|page   |requested page number  ||integer |
 
 **request examples**  
 ```
@@ -30,6 +31,10 @@ GET /api/search/?lat=19.8719294&long=-99.1367931&order=distance
 
 GET /api/search/?lat=19.8719294&long=-99.1367931&order=distance&keyword=tacos
 
+GET /api/search/?lat=19.8719294&long=-99.1367931&next_page=tokentoken...token
+
+GET /api/search/?lat=19.8719294&long=-99.1367931&page=2
+
 ```
 
 ### Responses
@@ -40,7 +45,7 @@ GET /api/search/?lat=19.8719294&long=-99.1367931&order=distance&keyword=tacos
 
 |Field  |Type  | Description| Extra Info |
 |-------|------|------------|--|
-|next_page_token  |string|pagination token  | optional |
+|next_page_token  |string|next page token  | optional |
 |places|objects list|list of places| |
 
 **Places fields**

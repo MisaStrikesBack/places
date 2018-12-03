@@ -158,10 +158,16 @@
 <td>'distance'</td>
 </tr>
 <tr>
-<td>next_page_token</td>
-<td>pagination token</td>
-<td>is a really long string</td>
+<td>next_page</td>
+<td>pass next_page_token to request next page</td>
+<td></td>
 <td>string</td>
+</tr>
+<tr>
+<td>page</td>
+<td>requested page number</td>
+<td></td>
+<td>integer</td>
 </tr>
 </tbody>
 </table>
@@ -173,6 +179,10 @@ GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;keyword=comida
 GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=distance
 
 GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=distance&amp;keyword=tacos
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;next_page=tokentoken...token
+
+GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;page=2
 
 </code></pre>
 
@@ -193,7 +203,7 @@ GET /api/search/?lat=19.8719294&amp;long=-99.1367931&amp;order=distance&amp;keyw
 <tr>
 <td>next_page_token</td>
 <td>string</td>
-<td>pagination token</td>
+<td>next page token</td>
 <td>optional</td>
 </tr>
 <tr>
