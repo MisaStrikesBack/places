@@ -34,3 +34,5 @@ INVALID_BED_TYPE_ID = "Invalid bed type id in array"
 INVALID_AMENITY_TYPE_ID = "Invalid amenity type id in array"
 
 REQUIRED_QUERY_PARAM = "This query param is required"
+
+INVALID_USER = "Invalid user"
